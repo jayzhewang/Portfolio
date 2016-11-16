@@ -1,6 +1,7 @@
 import React from 'react';
 import SidePanel from './side_panel';
-import Catalog from './catalog';
+import CatalogPanel from './catalog_panel';
+import ReadingPanel from './reading_panel';
 
 class App extends React.Component {
   constructor(props){
@@ -10,7 +11,8 @@ class App extends React.Component {
     return(
       <div className='main'>
         <SidePanel />
-        <Catalog />
+        <CatalogPanel />
+        <ReadingPanel />
       </div>
     );
   }

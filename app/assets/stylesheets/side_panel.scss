@@ -1,0 +1,29 @@
+.side-panel {
+  background: #f6f6f6;
+  border-bottom: 1px solid #c4c4c4;
+  width: 100vh;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+}
+
+.side-panel-top {
+  display: block;
+  margin-right: 25px;
+}
+
+.side-panel-bottom {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+
+.side-panel-bottom > div:first-child {
+  margin-right: 25px;
+}
