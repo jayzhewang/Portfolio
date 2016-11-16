@@ -8,10 +8,12 @@ class ReadingPanel extends React.Component {
   render(){
     return (
       <div className='reading-panel'>
-        <Inspirations />
-        <Projects />
-        <Skills />
-        <Contact />
+        <div className='scroll-container'>
+          <div className='scroll-page' id='inspirations'><Inspirations /></div>
+          <div className='scroll-page' id='projects'><Projects /></div>
+          <div className='scroll-page' id='skills'><Skills /></div>
+          <div className='scroll-page' id='contact'><Contact /></div>
+        </div>
       </div>
     );
   }
