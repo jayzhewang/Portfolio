@@ -15,6 +15,10 @@
   height: 100%;
 }
 
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
 .scroll-page {
   display: flex;
   align-items: center;
@@ -22,7 +26,3 @@
   height: 100%;
   font-size: 5em;
 }
-
-// ::-webkit-scrollbar {
-//     width: 0px;
-// }
