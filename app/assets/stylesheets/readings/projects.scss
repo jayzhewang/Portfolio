@@ -1,10 +1,26 @@
 .project {
-
+  display: block;
 }
 
-.project > h1 {
+.single-project {
+  display: flex;
+  justify-content: flex-start;
+  margin: 125px 0;
+}
+
+.project-description > div {
+  display: block;
+}
+
+.project-description > div > h1 {
   font-size: 30px;
   align-items: flex-start;
+}
+
+.project-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .gray-scale-img {
