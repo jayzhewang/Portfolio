@@ -2,10 +2,12 @@ import React from 'react';
 
 class SidePanel extends React.Component {
   componentDidMount(){
-    $('.side-panel').addClass('side-panel-slider');
+    setTimeout(()=>{
+      $('.side-panel').addClass('side-panel-slider');
+    }, 500);
     setTimeout(()=>{
       $('.slide-panel').removeClass('side-panel-slider');
-    }, 900);
+    }, 1000);
   }
 
   render(){

@@ -3,9 +3,9 @@
   width: 30vw;
   min-width: 300px;
   height: 100vh;
-  left: 60px;
   font-size: 46px;
   border-right: 1px solid #c4c4c4;
+  position: relative;
 }
 
 .catalog > ul > li {
@@ -16,4 +16,25 @@
   position: absolute;
   bottom: 0;
   left: 85px;
+}
+
+.catalog-shift-left {
+  right: 30vw;
+}
+
+.catalog-panel-slider {
+  // transform: translateX(50px);
+  // -webkit-transform: translateX(50px);
+  animation: catalog-panel-slider 1s forwards;
+  -webkit-animation: catalog-panel-slider 1s forwards;
+}
+
+@keyframes catalog-panel-slider {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(30vw); }
+}
+
+@-webkit-keyframes catalog-panel-slider {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(30vw); }
 }
