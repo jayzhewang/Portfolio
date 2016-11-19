@@ -3,6 +3,7 @@
   width: 70vw;
   min-width: 500px;
   height: 100vh;
+  position: relative;
 }
 
 .scroll-container {
@@ -23,4 +24,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.rp-shift-right {
+  left: 70vw;
+}
+
+.reading-panel-slider {
+  // transform: translateX(50px);
+  // -webkit-transform: translateX(50px);
+  animation: reading-panel-slider 1s forwards;
+  -webkit-animation: reading-panel-slider 1s forwards;
+}
+
+@keyframes reading-panel-slider {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-70vw); }
+}
+
+@-webkit-keyframes reading-panel-slider {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-70vw); }
 }

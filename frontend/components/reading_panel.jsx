@@ -5,6 +5,16 @@ import Skills from './readings/skills';
 import Contact from './readings/contact';
 
 class ReadingPanel extends React.Component {
+  componentDidMount(){
+    $('.reading-panel').addClass('rp-shift-right');
+    setTimeout(()=>{
+      $('.reading-panel').addClass('reading-panel-slider');
+    }, 1500);
+    setTimeout(()=>{
+      $('.reading-panel').removeClass('reading-panel-slider rp-shift-right');
+    }, 3000);
+  }
+
   render(){
     return (
       <div className='reading-panel'>
