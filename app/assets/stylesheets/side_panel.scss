@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  left: 60px;
+  left: 0;
   bottom: 0;
   transform: rotate(-90deg);
   transform-origin: bottom left;
@@ -26,4 +26,21 @@
 
 .side-panel-bottom > div:first-child {
   margin-right: 25px;
+}
+
+.side-panel-slider {
+  // transform: translateX(50px);
+  // -webkit-transform: translateX(50px);
+  animation: side-panel-slider 0.9s forwards;
+  -webkit-animation: side-panel-slider 0.9s forwards;
+}
+
+@keyframes side-panel-slider {
+  0% { transform: translateX(0%) rotate(-90deg); }
+  100% { transform: translateX(60px) rotate(-90deg); }
+}
+
+@-webkit-keyframes side-panel-slider {
+  0% { -webkit-transform: translateX(0%) rotate(-90deg); }
+  100% { -webkit-transform: translateX(60px) rotate(-90deg); }
 }
