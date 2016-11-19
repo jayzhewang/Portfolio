@@ -6,12 +6,13 @@ import Contact from './readings/contact';
 
 class ReadingPanel extends React.Component {
   componentDidMount(){
-    $('.reading-panel').addClass('rp-shift-right');
+    let readingPanel = $('.reading-panel');
+    readingPanel.addClass('rp-shift-right display-none');
     setTimeout(()=>{
-      $('.reading-panel').addClass('reading-panel-slider');
+      readingPanel.removeClass('display-none').addClass('reading-panel-slider');
     }, 1500);
     setTimeout(()=>{
-      $('.reading-panel').removeClass('reading-panel-slider rp-shift-right');
+      readingPanel.removeClass('reading-panel-slider rp-shift-right');
     }, 3000);
   }
 

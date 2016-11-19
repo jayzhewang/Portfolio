@@ -27,7 +27,11 @@
 }
 
 .rp-shift-right {
-  left: 70vw;
+  right: 70vw;
+}
+
+.display-none {
+  display: none;
 }
 
 .reading-panel-slider {
@@ -39,10 +43,10 @@
 
 @keyframes reading-panel-slider {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(-70vw); }
+  100% { transform: translateX(70vw); }
 }
 
 @-webkit-keyframes reading-panel-slider {
   0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(-70vw); }
+  100% { -webkit-transform: translateX(70vw); }
 }
