@@ -27,11 +27,11 @@
 .catalog-panel-slider {
   // transform: translateX(50px);
   // -webkit-transform: translateX(50px);
-  animation: catalog-panel-slider 1s forwards;
-  -webkit-animation: catalog-panel-slider 1s forwards;
-  -moz-animation: catalog-panel-slider 1s forwards;
-  -ms-animation: catalog-panel-slider 1s forwards;
-  -o-animation: catalog-panel-slider 1s forwards;
+  animation: catalog-panel-slider 0.8s forwards;
+  -webkit-animation: catalog-panel-slider 0.8s forwards;
+  -moz-animation: catalog-panel-slider 0.8s forwards;
+  -ms-animation: catalog-panel-slider 0.8s forwards;
+  -o-animation: catalog-panel-slider 0.8s forwards;
 }
 
 @keyframes catalog-panel-slider {
