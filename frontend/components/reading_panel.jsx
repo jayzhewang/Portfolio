@@ -10,7 +10,7 @@ class ReadingPanel extends React.Component {
     readingPanel.addClass('rp-shift-right display-none');
     setTimeout(()=>{
       readingPanel.removeClass('display-none').addClass('reading-panel-slider');
-    }, 1500);
+    }, 2000);
   }
 
   render(){

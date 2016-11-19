@@ -37,11 +37,11 @@
 .reading-panel-slider {
   // transform: translateX(50px);
   // -webkit-transform: translateX(50px);
-  animation: reading-panel-slider 1s forwards;
-  -webkit-animation: reading-panel-slider 1s forwards;
-  -moz-animation: reading-panel-slider 1s forwards;
-  -ms-animation: reading-panel-slider 1s forwards;
-  -o-animation: reading-panel-slider 1s forwards;
+  animation: reading-panel-slider 0.1s forwards linear;
+  -webkit-animation: reading-panel-slider 0.1s forwards linear;
+  -moz-animation: reading-panel-slider 0.1s forwards linear;
+  -ms-animation: reading-panel-slider 0.1s forwards linear;
+  -o-animation: reading-panel-slider 0.1s forwards linear;
 }
 
 @keyframes reading-panel-slider {
