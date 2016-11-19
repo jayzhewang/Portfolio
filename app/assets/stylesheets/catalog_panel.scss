@@ -43,3 +43,12 @@
   0% { -webkit-transform: translateX(0%); }
   100% { -webkit-transform: translateX(30vw); }
 }
+
+@-moz-keyframes catalog-panel-slider {
+  0% { -moz-transform: translateX(0%); }
+  100% { -moz-transform: translateX(30vw); }
+}
+@-o-keyframes catalog-panel-slider {
+  0% { -o-transform: translateX(0%); }
+  100% { -o-transform: translateX(30vw); }
+}
