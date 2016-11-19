@@ -1,6 +1,6 @@
 .catalog {
   display: block;
-  width: 30vw;
+  width: 25vw;
   min-width: 300px;
   height: 100vh;
   font-size: 46px;
@@ -21,7 +21,7 @@
 }
 
 .catalog-shift-left {
-  right: 30vw;
+  right: 25vw;
 }
 
 .catalog-panel-slider {
@@ -36,19 +36,19 @@
 
 @keyframes catalog-panel-slider {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(30vw); }
+  100% { transform: translateX(25vw); }
 }
 
 @-webkit-keyframes catalog-panel-slider {
   0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(30vw); }
+  100% { -webkit-transform: translateX(25vw); }
 }
 
 @-moz-keyframes catalog-panel-slider {
   0% { -moz-transform: translateX(0%); }
-  100% { -moz-transform: translateX(30vw); }
+  100% { -moz-transform: translateX(25vw); }
 }
 @-o-keyframes catalog-panel-slider {
   0% { -o-transform: translateX(0%); }
-  100% { -o-transform: translateX(30vw); }
+  100% { -o-transform: translateX(25vw); }
 }

@@ -1,6 +1,6 @@
 .reading-panel {
   display: block;
-  width: 70vw;
+  width: 75vw;
   min-width: 500px;
   height: 100vh;
   position: relative;
@@ -27,7 +27,7 @@
 }
 
 .rp-shift-right {
-  right: 70vw;
+  right: 75vw;
 }
 
 .display-none {
@@ -46,19 +46,19 @@
 
 @keyframes reading-panel-slider {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(70vw); }
+  100% { transform: translateX(75vw); }
 }
 
 @-webkit-keyframes reading-panel-slider {
   0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(70vw); }
+  100% { -webkit-transform: translateX(75vw); }
 }
 
 @-moz-keyframes reading-panel-slider {
   0% { -moz-transform: translateX(0%); }
-  100% { -moz-transform: translateX(70vw); }
+  100% { -moz-transform: translateX(75vw); }
 }
 @-o-keyframes reading-panel-slider {
   0% { -o-transform: translateX(0%); }
-  100% { -o-transform: translateX(70vw); }
+  100% { -o-transform: translateX(75vw); }
 }
