@@ -29,6 +29,9 @@
   // -webkit-transform: translateX(50px);
   animation: catalog-panel-slider 1s forwards;
   -webkit-animation: catalog-panel-slider 1s forwards;
+  -moz-animation: catalog-panel-slider 1s forwards;
+  -ms-animation: catalog-panel-slider 1s forwards;
+  -o-animation: catalog-panel-slider 1s forwards;
 }
 
 @keyframes catalog-panel-slider {
