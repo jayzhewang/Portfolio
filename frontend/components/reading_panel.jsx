@@ -15,7 +15,7 @@ class ReadingPanel extends React.Component {
         removeClass('rp-shift-left slider-1').
         addClass('rp-shift-left-1 reading-panel-slider');
       }, 400);
-    }, 2000);
+    }, 1500);
   }
 
   render(){
