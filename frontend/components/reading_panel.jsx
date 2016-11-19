@@ -7,9 +7,14 @@ import Contact from './readings/contact';
 class ReadingPanel extends React.Component {
   componentDidMount(){
     let readingPanel = $('.reading-panel');
-    readingPanel.addClass('rp-shift-right display-none');
+    readingPanel.addClass('rp-shift-left display-none');
     setTimeout(()=>{
-      readingPanel.removeClass('display-none').addClass('reading-panel-slider');
+      readingPanel.removeClass('display-none').addClass('slider-1');
+      setTimeout(()=>{
+        $('.reading-panel').
+        removeClass('rp-shift-left slider-1').
+        addClass('rp-shift-left-1 reading-panel-slider');
+      }, 400);
     }, 2000);
   }
 

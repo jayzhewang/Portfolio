@@ -4,6 +4,7 @@
   min-width: 500px;
   height: 100vh;
   position: relative;
+  background: #f7fff7;
 }
 
 .scroll-container {
@@ -26,8 +27,16 @@
   justify-content: center;
 }
 
-.rp-shift-right {
+.scroll-page:first-child {
+  border: none;
+}
+
+.rp-shift-left {
   right: 75vw;
+}
+
+.rp-shift-left-1 {
+  right: 70vw;
 }
 
 .display-none {
@@ -37,28 +46,57 @@
 .reading-panel-slider {
   // transform: translateX(50px);
   // -webkit-transform: translateX(50px);
-  animation: reading-panel-slider 0.1s forwards linear;
-  -webkit-animation: reading-panel-slider 0.1s forwards linear;
-  -moz-animation: reading-panel-slider 0.1s forwards linear;
-  -ms-animation: reading-panel-slider 0.1s forwards linear;
-  -o-animation: reading-panel-slider 0.1s forwards linear;
+  animation: reading-panel-slider 0.3s forwards ease-in-out;
+  -webkit-animation: reading-panel-slider 0.3s forwards ease-in-out;
+  -moz-animation: reading-panel-slider 0.3s forwards ease-in-out;
+  -ms-animation: reading-panel-slider 0.3s forwards ease-in-out;
+  -o-animation: reading-panel-slider 0.3s forwards ease-in-out;
 }
 
 @keyframes reading-panel-slider {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(75vw); }
+  100% { transform: translateX(70vw); }
 }
 
 @-webkit-keyframes reading-panel-slider {
   0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(75vw); }
+  100% { -webkit-transform: translateX(70vw); }
 }
 
 @-moz-keyframes reading-panel-slider {
   0% { -moz-transform: translateX(0%); }
-  100% { -moz-transform: translateX(75vw); }
+  100% { -moz-transform: translateX(70vw); }
 }
 @-o-keyframes reading-panel-slider {
   0% { -o-transform: translateX(0%); }
-  100% { -o-transform: translateX(75vw); }
+  100% { -o-transform: translateX(70vw); }
+}
+
+.slider-1 {
+  // transform: translateX(50px);
+  // -webkit-transform: translateX(50px);
+  animation: slider-1 0.4s forwards linear;
+  -webkit-animation: slider-1 0.4s forwards linear;
+  -moz-animation: slider-1 0.4s forwards linear;
+  -ms-animation: slider-1 0.4s forwards linear;
+  -o-animation: slider-1 0.4s forwards linear;
+}
+
+@keyframes slider-1 {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(5vw); }
+}
+
+@-webkit-keyframes slider-1 {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(5vw); }
+}
+
+@-moz-keyframes slider-1 {
+  0% { -moz-transform: translateX(0%); }
+  100% { -moz-transform: translateX(5vw); }
+}
+@-o-keyframes slider-1 {
+  0% { -o-transform: translateX(0%); }
+  100% { -o-transform: translateX(5vw); }
 }
