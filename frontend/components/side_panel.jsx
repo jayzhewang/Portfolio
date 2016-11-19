@@ -4,7 +4,7 @@ class SidePanel extends React.Component {
   componentDidMount(){
     setTimeout(()=>{
       $('.side-panel').addClass('side-panel-slider');
-    }, 500);
+    }, 1000);
   }
 
   render(){

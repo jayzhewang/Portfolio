@@ -32,11 +32,11 @@
 .side-panel-slider {
   // transform: translateX(50px);
   // -webkit-transform: translateX(50px);
-  animation: side-panel-slider 1s forwards;
-  -webkit-animation: side-panel-slider 1s forwards;
-  -moz-animation: side-panel-slider 1s forwards;
-  -ms-animation: side-panel-slider 1s forwards;
-  -o-animation: side-panel-slider 1s forwards;
+  animation: side-panel-slider 0.3s forwards ease-out;
+  -webkit-animation: side-panel-slider 0.3s forwards ease-out;
+  -moz-animation: side-panel-slider 0.3s forwards ease-out;
+  -ms-animation: side-panel-slider 0.3s forwards ease-out;
+  -o-animation: side-panel-slider 0.3s forwards ease-out;
 }
 
 @keyframes side-panel-slider {
