@@ -3,9 +3,6 @@ import React from 'react';
 class Catalog extends React.Component {
   componentDidMount(){
     $('.catalog').addClass('catalog-panel-slider catalog-shift-left');
-    setTimeout(()=>{
-      $('.catalog').removeClass('catalog-panel-slider catalog-shift-left');
-    }, 1000);
   }
 
   render(){
