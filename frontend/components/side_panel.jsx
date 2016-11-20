@@ -3,8 +3,12 @@ import React from 'react';
 class SidePanel extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      aboutMeShown: false
+    };
     this.showAboutMe = this.showAboutMe.bind(this);
     this.closeAboutMe = this.closeAboutMe.bind(this);
+    this.openSlider = this.openSlider.bind(this);
   }
 
   componentDidMount(){
@@ -22,6 +26,7 @@ class SidePanel extends React.Component {
     }, 400);
     $('.about-close').removeClass('ac-keep-right ac-button-slider-left').
     addClass('ac-button-slider');
+    this.setState({aboutMeShown: true});
   }
 
   closeAboutMe(){
@@ -34,6 +39,13 @@ class SidePanel extends React.Component {
     }, 400);
     $('.about-close').removeClass('ac-button-slider')
     .addClass('ac-keep-right ac-button-slider-left');
+    this.setState({aboutMeShown: false});
+  }
+
+  openSlider(){
+    if(!this.state.aboutMeShown){
+      this.showAboutMe();
+    }
   }
 
   render(){
@@ -59,7 +71,7 @@ class SidePanel extends React.Component {
           </div>
         </div>
         <div className='side-panel-top'>
-          <div>zhe wang</div>
+          <div onClick={this.openSlider}>zhe wang</div>
         </div>
       </div>
     );

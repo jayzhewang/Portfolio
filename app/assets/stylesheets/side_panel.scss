@@ -21,6 +21,10 @@
   margin-right: 25px;
 }
 
+.side-panel-top > div:hover{
+  cursor: pointer;
+}
+
 .side-panel-bottom {
   display: flex;
   justify-content: flex-start;
