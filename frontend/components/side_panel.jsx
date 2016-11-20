@@ -23,9 +23,9 @@ class SidePanel extends React.Component {
     setTimeout(()=>{
       $('.about-me').
       removeClass('am-slider-1').addClass('am-shift-right about-me-slider');
+      $('.about-close').removeClass('ac-keep-right ac-button-slider-left').
+      addClass('ac-button-slider');
     }, 400);
-    $('.about-close').removeClass('ac-keep-right ac-button-slider-left').
-    addClass('ac-button-slider');
     this.setState({aboutMeShown: true});
   }
 
