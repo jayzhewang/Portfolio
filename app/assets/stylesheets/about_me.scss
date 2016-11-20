@@ -11,6 +11,11 @@
   padding-left: 60px;
 }
 
+.about-me-container > div {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
 .about-me-container > div:first-child {
   color: #c4c4c4;
   margin-top: 30px
@@ -19,20 +24,21 @@
 .am-header {
   display: flex;
   justify-content: flex-start;
-  margin-top: 60px;
 }
 
-.am-header > div {
+.am-header-name {
   display: block;
   min-width: 200px;
+  margin-right: 20px;
+  padding-top: 10px;
 }
 
-.am-header > div > h1 {
+.am-header-name > h1 {
   font-size: 75px;
   font-weight: bold;
 }
 
-.am-header > div > img {
+.am-img-container > img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
