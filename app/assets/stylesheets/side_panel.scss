@@ -38,16 +38,35 @@
   padding-top: 5px;
 }
 
-.side-panel-links > a:first-child {
+.github-background {
   margin-right: 15px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
-.side-panel-links > a:first-child > img {
+.github-background:hover {
+  background: #ffa823;
+  transition: 0.3s ease-in;
+}
+
+.github-background > a > img {
   height: 20px;
   weight: 20px;
 }
 
-.side-panel-links > a:nth-child(2) > img{
+.linkedin-background {
+  border-radius: 20%;
+  height: 20px;
+  width: 20px;
+}
+
+.linkedin-background:hover {
+  background: #3c948b;
+  transition: 0.3s ease-in;
+}
+
+.linkedin-background > a > img{
   height: 20px;
   weight: 20px;
 }
