@@ -1,7 +1,7 @@
 import React from 'react';
 import Inspirations from './readings/inspirations';
 import Projects from './readings/projects';
-import Skills from './readings/skills';
+import Assets from './readings/assets';
 import Contact from './readings/contact';
 
 class ReadingPanel extends React.Component {
@@ -24,7 +24,7 @@ class ReadingPanel extends React.Component {
         <div className='scroll-container'>
           <div className='scroll-page' id='inspirations'><Inspirations /></div>
           <div className='scroll-page' id='projects'><Projects /></div>
-          <div className='scroll-page' id='skills'><Skills /></div>
+          <div className='scroll-page' id='assets'><Assets /></div>
           <div className='scroll-page' id='contact'><Contact /></div>
         </div>
       </div>

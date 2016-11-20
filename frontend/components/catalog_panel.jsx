@@ -11,7 +11,7 @@ class Catalog extends React.Component {
         <ul>
           <li type='none'><a href="#inspirations">inspirations</a></li>
           <li type='none'><a href="#projects">projects</a></li>
-          <li type='none'><a href="#skills">skills</a></li>
+          <li type='none'><a href="#assets">assets</a></li>
           <li type='none'><a href="#contact">contact</a></li>
         </ul>
       </div>

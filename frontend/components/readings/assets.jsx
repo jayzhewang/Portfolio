@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Skills extends React.Component {
+class Assets extends React.Component {
   render(){
     return(
       <div>
-        Skills
+        Assets
       </div>
     );
   }
 }
 
-export default Skills;
+export default Assets;
