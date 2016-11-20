@@ -7,6 +7,37 @@
   right: calc(100vw - 60px);
 }
 
+.about-me-container {
+  padding-left: 60px;
+}
+
+.about-me-container > div:first-child {
+  color: #c4c4c4;
+  margin-top: 30px
+}
+
+.am-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60px;
+}
+
+.am-header > div {
+  display: block;
+  min-width: 200px;
+}
+
+.am-header > div > h1 {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.am-header > div > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 .am-shift-right {
   right: calc(95vw - 60px);
 }
