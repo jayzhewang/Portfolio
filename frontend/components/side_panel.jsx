@@ -58,19 +58,19 @@ class SidePanel extends React.Component {
           </div>
           <div>zwang91521@hotmail.com</div>
         </div>
-        <div className='side-panel-links'>
-          <div className='github-background'>
-            <a href='https://github.com/jz-wang'>
-              <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479622604/githubpng_s578ds.png' />
-            </a>
-          </div>
-          <div className='linkedin-background'>
-            <a href='https://www.linkedin.com/in/zhe-wang-b282b4127'>
-              <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479622555/linkedinpng_ymsdt7.png' />
-            </a>
-          </div>
-        </div>
         <div className='side-panel-top'>
+          <div className='side-panel-links'>
+            <div className='github-background'>
+              <a href='https://github.com/jz-wang'>
+                <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479622604/githubpng_s578ds.png' />
+              </a>
+            </div>
+            <div className='linkedin-background'>
+              <a href='https://www.linkedin.com/in/zhe-wang-b282b4127'>
+                <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479622555/linkedinpng_ymsdt7.png' />
+              </a>
+            </div>
+          </div>
           <div onClick={this.openSlider}>zhe wang</div>
         </div>
       </div>

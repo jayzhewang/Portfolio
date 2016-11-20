@@ -17,8 +17,11 @@
 }
 
 .side-panel-top {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-right: 25px;
+  min-width: 58px;
 }
 
 .side-panel-top > div:hover{
@@ -29,6 +32,7 @@
   display: flex;
   justify-content: flex-start;
   margin-left: 25px;
+  min-width: 223px;
 }
 
 .side-panel-bottom > div:nth-child(2) {
@@ -36,10 +40,10 @@
 }
 
 .side-panel-links {
-  min-width: 230px;
   display: flex;
   justify-content: flex-end;
-  padding-top: 5px;
+  padding: 5px 18px 0 0;
+  margin-left: 20px;
 }
 
 .github-background {
