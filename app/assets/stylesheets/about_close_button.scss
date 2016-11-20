@@ -2,15 +2,15 @@
   margin-right: 25px;
   display: block;
   position: absolute;
-  bottom: 21px;
+  bottom: 19px;
 }
 
 .about-close > div:nth-child(2) {
-  margin-top: 18px;
+  margin-top: 19px;
 }
 
 .ac-keep-right {
-  top: 20px;
+  top: 19px;
 }
 
 .ac-button-slider {
@@ -25,21 +25,21 @@
 
 @keyframes ac-button-slider {
   0% { transform: translateY(0%); }
-  100% { transform: translateY(40.5px); }
+  100% { transform: translateY(38px); }
 }
 
 @-webkit-keyframes ac-button-slider {
   0% { -webkit-transform: translateY(0%); }
-  100% { -webkit-transform: translateY(40.5px); }
+  100% { -webkit-transform: translateY(38px); }
 }
 
 @-moz-keyframes ac-button-slider {
   0% { -moz-transform: translateY(0%); }
-  100% { -moz-transform: translateY(40.5px); }
+  100% { -moz-transform: translateY(38px); }
 }
 @-o-keyframes ac-button-slider {
   0% { -o-transform: translateY(0%); }
-  100% { -o-transform: translateY(40.5px); }
+  100% { -o-transform: translateY(38px); }
 }
 
 .ac-button-slider-left {
@@ -54,19 +54,19 @@
 
 @keyframes ac-button-slider-left {
   0% { transform: translateY(0%); }
-  100% { transform: translateY(-40.5px); }
+  100% { transform: translateY(-38px); }
 }
 
 @-webkit-keyframes ac-button-slider-left {
   0% { -webkit-transform: translateY(0%); }
-  100% { -webkit-transform: translateY(-40.5px); }
+  100% { -webkit-transform: translateY(-38px); }
 }
 
 @-moz-keyframes ac-button-slider-left {
   0% { -moz-transform: translateY(0%); }
-  100% { -moz-transform: translateY(-40.5px); }
+  100% { -moz-transform: translateY(-38px); }
 }
 @-o-keyframes ac-button-slider-left {
   0% { -o-transform: translateY(0%); }
-  100% { -o-transform: translateY(-40.5px); }
+  100% { -o-transform: translateY(-38px); }
 }

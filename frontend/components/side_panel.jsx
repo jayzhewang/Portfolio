@@ -20,7 +20,7 @@ class SidePanel extends React.Component {
       $('.about-me').
       removeClass('am-slider-1').addClass('am-shift-right about-me-slider');
     }, 400);
-    $('.about-close').
+    $('.about-close').removeClass('ac-keep-right ac-button-slider-left').
     addClass('ac-button-slider');
   }
 
