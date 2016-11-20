@@ -5,6 +5,10 @@
   bottom: 19px;
 }
 
+.about-close:hover {
+  cursor: pointer;
+}
+
 .about-close > div:nth-child(2) {
   margin-top: 32px;
 }
@@ -14,11 +18,11 @@
 }
 
 .ac-button-slider {
-  animation: ac-button-slider 0.5s forwards ease-out;
-  -webkit-animation: ac-button-slider 0.5s forwards ease-out;
-  -moz-animation: ac-button-slider 0.5s forwards ease-out;
-  -ms-animation: ac-button-slider 0.5s forwards ease-out;
-  -o-animation: ac-button-slider 0.5s forwards ease-out;
+  animation: ac-button-slider 0.4s forwards ease-out;
+  -webkit-animation: ac-button-slider 0.4s forwards ease-out;
+  -moz-animation: ac-button-slider 0.4s forwards ease-out;
+  -ms-animation: ac-button-slider 0.4s forwards ease-out;
+  -o-animation: ac-button-slider 0.4s forwards ease-out;
 }
 
 @keyframes ac-button-slider {
@@ -41,11 +45,11 @@
 }
 
 .ac-button-slider-left {
-  animation: ac-button-slider-left 0.5s forwards ease-out;
-  -webkit-animation: ac-button-slider-left 0.5s forwards ease-out;
-  -moz-animation: ac-button-slider-left 0.5s forwards ease-out;
-  -ms-animation: ac-button-slider-left 0.5s forwards ease-out;
-  -o-animation: ac-button-slider-left 0.5s forwards ease-out;
+  animation: ac-button-slider-left 0.4s forwards ease-out;
+  -webkit-animation: ac-button-slider-left 0.4s forwards ease-out;
+  -moz-animation: ac-button-slider-left 0.4s forwards ease-out;
+  -ms-animation: ac-button-slider-left 0.4s forwards ease-out;
+  -o-animation: ac-button-slider-left 0.4s forwards ease-out;
 }
 
 @keyframes ac-button-slider-left {
