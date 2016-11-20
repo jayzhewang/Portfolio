@@ -1,0 +1,72 @@
+.about-close {
+  margin-right: 25px;
+  display: block;
+  position: absolute;
+  bottom: 21px;
+}
+
+.about-close > div:nth-child(2) {
+  margin-top: 18px;
+}
+
+.ac-keep-right {
+  top: 20px;
+}
+
+.ac-button-slider {
+  // transform: translateX(50px);
+  // -webkit-transform: translateX(50px);
+  animation: ac-button-slider 0.5s forwards ease-out;
+  -webkit-animation: ac-button-slider 0.5s forwards ease-out;
+  -moz-animation: ac-button-slider 0.5s forwards ease-out;
+  -ms-animation: ac-button-slider 0.5s forwards ease-out;
+  -o-animation: ac-button-slider 0.5s forwards ease-out;
+}
+
+@keyframes ac-button-slider {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(40.5px); }
+}
+
+@-webkit-keyframes ac-button-slider {
+  0% { -webkit-transform: translateY(0%); }
+  100% { -webkit-transform: translateY(40.5px); }
+}
+
+@-moz-keyframes ac-button-slider {
+  0% { -moz-transform: translateY(0%); }
+  100% { -moz-transform: translateY(40.5px); }
+}
+@-o-keyframes ac-button-slider {
+  0% { -o-transform: translateY(0%); }
+  100% { -o-transform: translateY(40.5px); }
+}
+
+.ac-button-slider-left {
+  // transform: translateX(50px);
+  // -webkit-transform: translateX(50px);
+  animation: ac-button-slider-left 0.5s forwards ease-out;
+  -webkit-animation: ac-button-slider-left 0.5s forwards ease-out;
+  -moz-animation: ac-button-slider-left 0.5s forwards ease-out;
+  -ms-animation: ac-button-slider-left 0.5s forwards ease-out;
+  -o-animation: ac-button-slider-left 0.5s forwards ease-out;
+}
+
+@keyframes ac-button-slider-left {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-40.5px); }
+}
+
+@-webkit-keyframes ac-button-slider-left {
+  0% { -webkit-transform: translateY(0%); }
+  100% { -webkit-transform: translateY(-40.5px); }
+}
+
+@-moz-keyframes ac-button-slider-left {
+  0% { -moz-transform: translateY(0%); }
+  100% { -moz-transform: translateY(-40.5px); }
+}
+@-o-keyframes ac-button-slider-left {
+  0% { -o-transform: translateY(0%); }
+  100% { -o-transform: translateY(-40.5px); }
+}

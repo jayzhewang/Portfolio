@@ -20,8 +20,8 @@ class SidePanel extends React.Component {
       $('.about-me').
       removeClass('am-slider-1').addClass('am-shift-right about-me-slider');
     }, 400);
-    $('#about').addClass('display-none');
-    $('#close').removeClass('display-none');
+    $('.about-close').
+    addClass('ac-button-slider');
   }
 
   closeAboutMe(){
@@ -32,19 +32,19 @@ class SidePanel extends React.Component {
       $('.about-me').addClass('display-none').
       removeClass('am-shift-keep-right about-me-slider-left');
     }, 400);
-    $('#close').addClass('display-none');
-    $('#about').removeClass('display-none');
+    $('.about-close').removeClass('ac-button-slider')
+    .addClass('ac-keep-right ac-button-slider-left');
   }
 
   render(){
     return(
       <div className='side-panel'>
         <div className='side-panel-bottom'>
-          <div id='about' onClick={this.showAboutMe}>about</div>
-          <div id='close'
-               className='display-none'
-               onClick={this.closeAboutMe}>close</div>
-          <div>zwang91521@hotmail.com</div>
+          <div className='about-close'>
+            <div id='close' onClick={this.closeAboutMe}>close</div>
+            <div id='about' onClick={this.showAboutMe}>about</div>
+          </div>
+            <div>zwang91521@hotmail.com</div>
         </div>
         <div className='side-panel-top'>
           <div>zhe wang</div>
