@@ -31,6 +31,27 @@
   margin-left: 56px;
 }
 
+.side-panel-links {
+  min-width: 230px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+
+.side-panel-links > a:first-child {
+  margin-right: 15px;
+}
+
+.side-panel-links > a:first-child > img {
+  height: 20px;
+  weight: 20px;
+}
+
+.side-panel-links > a:nth-child(2) > img{
+  height: 20px;
+  weight: 20px;
+}
+
 .side-panel-slider {
   animation: side-panel-slider 0.3s forwards ease-out;
   -webkit-animation: side-panel-slider 0.3s forwards ease-out;
