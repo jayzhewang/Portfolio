@@ -1,8 +1,22 @@
 .quotes {
-  font-size: 20px;
-  padding: 0 50px;
+  overflow: hidden;
+  margin-bottom: 50vh;
 }
 
-.quotes > div:last-child {
+.quotes > img {
+  width: auto;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 50vh;
+}
+
+.text {
+  font-size: 16px;
+  padding: 0 100px;
+  line-height: 20px;
+}
+
+.text > div:last-child {
+  margin-top: 30vh;
   text-align: right;
 }
