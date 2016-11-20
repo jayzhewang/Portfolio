@@ -11,7 +11,7 @@
   bottom: 0;
   transform: rotate(-90deg);
   transform-origin: bottom left;
-  z-index: 2;
+  z-index: 3;
 }
 
 .side-panel-top {
@@ -25,7 +25,8 @@
   margin-left: 25px;
 }
 
-.side-panel-bottom > div:first-child {
+.side-panel-bottom > div:first-child, .side-panel-bottom > div:nth-child(2) {
+  width: 36px;
   margin-right: 25px;
 }
 
