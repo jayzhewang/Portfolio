@@ -10,6 +10,7 @@ class Assets extends React.Component {
           <div id='icon'><img src='https://res.cloudinary.com/cloudlicious/image/upload/c_scale,w_150/v1479719540/Ruby_on_Rails.svg_xmspje.png'/></div>
           <div id='icon'><img src='https://res.cloudinary.com/cloudlicious/image/upload/c_scale,w_150/v1479720122/react_zo24q8.png'/></div>
           <div id='icon'><img src='https://res.cloudinary.com/cloudlicious/image/upload/c_scale,w_150/v1479719341/postgresql_mguxhq.png'/></div>
+          <div id='icon'><img src='https://res.cloudinary.com/cloudlicious/image/upload/c_scale,w_150/v1479722640/analytics_wqvi3o.png'/></div>
         </div>
         <div>
           <div id='icon'><img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479719341/nodejs_hx05m8.png'/></div>
