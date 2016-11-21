@@ -27,21 +27,21 @@
 
 @keyframes ac-button-slider {
   0% { transform: translateY(0%); }
-  100% { transform: translateY(48px); }
+  100% { transform: translateY(49px); }
 }
 
 @-webkit-keyframes ac-button-slider {
   0% { -webkit-transform: translateY(0%); }
-  100% { -webkit-transform: translateY(48px); }
+  100% { -webkit-transform: translateY(49px); }
 }
 
 @-moz-keyframes ac-button-slider {
   0% { -moz-transform: translateY(0%); }
-  100% { -moz-transform: translateY(48px); }
+  100% { -moz-transform: translateY(49px); }
 }
 @-o-keyframes ac-button-slider {
   0% { -o-transform: translateY(0%); }
-  100% { -o-transform: translateY(48px); }
+  100% { -o-transform: translateY(49px); }
 }
 
 .ac-button-slider-left {
@@ -54,19 +54,19 @@
 
 @keyframes ac-button-slider-left {
   0% { transform: translateY(0%); }
-  100% { transform: translateY(-48px); }
+  100% { transform: translateY(-47px); }
 }
 
 @-webkit-keyframes ac-button-slider-left {
   0% { -webkit-transform: translateY(0%); }
-  100% { -webkit-transform: translateY(-48px); }
+  100% { -webkit-transform: translateY(-47px); }
 }
 
 @-moz-keyframes ac-button-slider-left {
   0% { -moz-transform: translateY(0%); }
-  100% { -moz-transform: translateY(-48px); }
+  100% { -moz-transform: translateY(-47px); }
 }
 @-o-keyframes ac-button-slider-left {
   0% { -o-transform: translateY(0%); }
-  100% { -o-transform: translateY(-48px); }
+  100% { -o-transform: translateY(-47px); }
 }
