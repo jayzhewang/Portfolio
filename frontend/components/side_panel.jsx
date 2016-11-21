@@ -4,7 +4,9 @@ class SidePanel extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      aboutMeShown: false
+      aboutMeShown: false,
+      aboutMe: '',
+      aboutClose: ''
     };
     this.showAboutMe = this.showAboutMe.bind(this);
     this.closeAboutMe = this.closeAboutMe.bind(this);
@@ -12,32 +14,34 @@ class SidePanel extends React.Component {
   }
 
   componentDidMount(){
+    this.setState({
+      aboutMe: $('.about-me'),
+      aboutClose: $('.about-close')
+    });
     setTimeout(()=>{
       $('.side-panel').addClass('side-panel-slider');
     }, 600);
   }
 
   showAboutMe(){
-    let aboutMe = $('.about-me');
-    aboutMe.removeClass('display-none').addClass('am-slider-1');
+    this.state.aboutMe.removeClass('display-none').addClass('am-slider-1');
     setTimeout(()=>{
-      $('.about-me').
-      removeClass('am-slider-1').addClass('am-shift-right about-me-slider');
-      $('.about-close').removeClass('ac-keep-right ac-button-slider-left').
+      this.state.aboutMe.removeClass('am-slider-1').
+      addClass('am-shift-right about-me-slider');
+      this.state.aboutClose.removeClass('ac-keep-right ac-button-slider-left').
       addClass('ac-button-slider');
     }, 400);
     this.setState({aboutMeShown: true});
   }
 
   closeAboutMe(){
-    let aboutMe = $('.about-me');
-    aboutMe.removeClass('about-me-slider am-shift-right').
+    this.state.aboutMe.removeClass('about-me-slider am-shift-right').
     addClass('am-shift-keep-right about-me-slider-left');
     setTimeout(()=>{
-      $('.about-me').addClass('display-none').
+      this.state.aboutMe.addClass('display-none').
       removeClass('am-shift-keep-right about-me-slider-left');
     }, 400);
-    $('.about-close').removeClass('ac-button-slider')
+    this.state.aboutClose.removeClass('ac-button-slider')
     .addClass('ac-keep-right ac-button-slider-left');
     this.setState({aboutMeShown: false});
   }

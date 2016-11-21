@@ -10,12 +10,14 @@ class ReadingPanel extends React.Component {
     readingPanel.addClass('rp-shift-left display-none');
     setTimeout(()=>{
       readingPanel.removeClass('display-none').addClass('slider-1');
+      let readingPanel2 = readingPanel;
       setTimeout(()=>{
-        $('.reading-panel').
+        readingPanel2.
         removeClass('rp-shift-left slider-1').
         addClass('rp-shift-left-1 reading-panel-slider');
+        let readingPanel3 = readingPanel2;
         setTimeout(()=>{
-          $('.reading-panel').removeClass('rp-shift-left-1 reading-panel-slider');
+          readingPanel3.removeClass('rp-shift-left-1 reading-panel-slider');
         }, 300);
       }, 400);
     }, 1000);
