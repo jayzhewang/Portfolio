@@ -1,22 +1,23 @@
 .quotes {
   overflow: hidden;
-  margin-bottom: 50vh;
 }
 
 .quotes > img {
   width: auto;
   height: 100vh;
   position: relative;
-  margin-bottom: 50vh;
 }
 
 .text {
+  width: auto;
+  height: 100vh;
   font-size: 16px;
   padding: 0 100px;
   line-height: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.text > div:last-child {
-  margin-top: 30vh;
+.text > div > div:last-child {
   text-align: right;
 }
