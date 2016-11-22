@@ -1,6 +1,6 @@
 .quotes {
   overflow: hidden;
-  height: 175vh;
+  height: 200vh;
 }
 
 .quotes > img {
@@ -11,7 +11,7 @@
 
 .text {
   width: auto;
-  height: 75vh;
+  height: 100vh;
   font-size: 16px;
   padding: 0 100px;
   line-height: 20px;
@@ -19,11 +19,8 @@
   align-items: flex-end;
 }
 
-.text > div {
-  padding-bottom: 12vh;
-}
-
 .text > div > div:last-child {
+  height: 15vh;
   text-align: right;
-  padding-top: 100px;
+  padding-top: 35vh;
 }

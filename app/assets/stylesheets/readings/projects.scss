@@ -1,16 +1,19 @@
 .projects {
+  width: 75vw;
   display: block;
-  margin-top: 25vh;
+  background-image: url('https://res.cloudinary.com/cloudlicious/image/upload/v1479799437/step_fpadja.png');
+  background-repeat: repeat-x repeat-y;
+  padding: 25vh 0;
 }
 
 .single-project {
-  display: flex;
-  justify-content: flex-start;
+  display: block;
   border: 5px solid #122246;
   border-radius: 5px;
   width: 700px;
   height: 300px;
   position: relative;
+  margin: auto;
 }
 
 .single-project:nth-child(odd) {
@@ -18,8 +21,9 @@
 }
 
 .single-project:nth-child(even) {
-  left: 3vw;
-  margin: 15vh 0;
+  left: 2vw;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
 
 .single-project > span {
