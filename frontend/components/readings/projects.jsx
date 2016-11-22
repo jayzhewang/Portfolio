@@ -4,57 +4,51 @@ class Projects extends React.Component {
   render(){
     return(
       <div className='projects'>
-        <div className='single-project'>
-          <img src="https://res.cloudinary.com/cloudlicious/image/upload/v1479408575/eatsy_bnsqaq.png"
-               className='gray-scale-img'
-               width='auto'
-               height='300'/>
+        <div className='single-project' id='eatsy'>
+          <span></span>
           <div className='project-description'>
-              <div>
-                <h1>Eatsy</h1>
-                <div className='project-links'>
-                  <a href='http://www.eatsyapp.net/'>live</a>
-                  <a href='https://github.com/jz-wang/Eatsy'>github</a>
+              <h1>Eatsy</h1>
+              <div className='project-links'>
+                <div>
+                  <div className='project-live'>
+                    <a href='http://www.eatsyapp.net/'><img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479796039/live_ghqrvb.png'/></a>
+                  </div>
+                  <div className='project-github'>
+                    <a href='https://github.com/jz-wang/Eatsy'><img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479793763/github_p6bu0h.png'/></a>
+                  </div>
                 </div>
               </div>
+          </div>
+        </div>
+        <div className='single-project' id='chrome'>
+          <span></span>
+          <div className='project-description'>
+            <h1>StreetSweepSF</h1>
+            <div className='project-links'>
               <div>
-
+                <div className='project-live'>
+                  <a href='https://chrome.google.com/webstore/detail/streetsweepsf/amepcflliholagifophjfhcffnfifbeh'><img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479796039/live_ghqrvb.png'/></a>
+                </div>
+                <div className='project-github'>
+                  <a href='https://github.com/jz-wang/StreetSweepSF'><img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479793763/github_p6bu0h.png'/></a>
+                </div>
               </div>
+            </div>
           </div>
         </div>
-        <div className='single-project'>
+        <div className='single-project' id='endless'>
+          <span></span>
           <div className='project-description'>
-            <div>
-              <h1>StreetSweepSF</h1>
-              <div className='project-links'>
-                <a href='https://chrome.google.com/webstore/detail/streetsweepsf/amepcflliholagifophjfhcffnfifbeh'>live</a>
-                <a href='https://github.com/jz-wang/StreetSweepSF'>github</a>
+            <h1>EndlessSprinter</h1>
+            <div className='project-links'>
+              <div>
+                <div className='project-live'>
+                  <a href='https://jz-wang.github.io/'><img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479796039/live_ghqrvb.png'/></a>
+                </div>
+                <div className='project-github'>
+                  <a href='https://github.com/jz-wang/EndlessSprinter'><img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479793763/github_p6bu0h.png'/></a>
+                </div>
               </div>
-            </div>
-            <div>
-
-            </div>
-          </div>
-          <img src="https://res.cloudinary.com/cloudlicious/image/upload/v1479408573/chrome_wfgmu7.png"
-               className='gray-scale-img'
-               width='auto'
-               height='300'/>
-        </div>
-        <div className='single-project'>
-          <img src="https://res.cloudinary.com/cloudlicious/image/upload/v1479408572/endless_clsruf.png"
-               className='gray-scale-img'
-               width='auto'
-               height='300'/>
-          <div className='project-description'>
-            <div>
-              <h1>EndlessSprinter</h1>
-              <div className='project-links'>
-                <a href='https://jz-wang.github.io/'>live</a>
-                <a href='https://github.com/jz-wang/EndlessSprinter'>github</a>
-              </div>
-            </div>
-            <div>
-
             </div>
           </div>
         </div>

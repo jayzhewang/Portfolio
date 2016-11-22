@@ -71,7 +71,7 @@ class SidePanel extends React.Component {
             </div>
             <div className='linkedin-background'>
               <a href='https://www.linkedin.com/in/zhe-wang-b282b4127'>
-                <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479622555/linkedinpng_ymsdt7.png' />
+                <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479793763/linkedin_yv8hpk.png' />
               </a>
             </div>
           </div>
