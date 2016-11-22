@@ -100,3 +100,8 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+.project-live > a > img {
+  border-radius: 10%;
+  border: 1px solid black;
+}
