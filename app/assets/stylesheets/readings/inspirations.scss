@@ -12,8 +12,8 @@
 .text {
   width: auto;
   height: 100vh;
-  font-size: 16px;
-  padding: 0 100px;
+  font-size: 19px;
+  padding: 0 8vw;
   line-height: 20px;
   display: flex;
   align-items: flex-end;
@@ -23,4 +23,19 @@
   height: 15vh;
   text-align: right;
   padding-top: 35vh;
+}
+
+.text > div > div {
+  line-height: 150%;
+}
+
+#quotation-mark {
+  font-size: 30px;
+  color: black;
+  font-family: 'Anton', sans-serif !important;
+}
+
+.quote-line {
+  display: flex;
+  justify-content: space-between;
 }
