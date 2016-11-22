@@ -54,7 +54,7 @@ class AboutMe extends React.Component {
             </p>
           </div>
           <div className='am-misc'>
-            Misc
+            
           </div>
         </div>
       </div>
