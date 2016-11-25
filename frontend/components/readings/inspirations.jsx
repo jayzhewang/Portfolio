@@ -4,7 +4,7 @@ class Inspirations extends React.Component {
   render(){
     return(
       <div className='quotes'>
-        <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479628603/cloudcoder_p70n9u.png' />
+        <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480065235/cloudcoder_am73qm.png' />
         <div className='text'>
           <div>
             <div className='quote-line'>

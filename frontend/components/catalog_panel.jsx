@@ -22,7 +22,6 @@ class Catalog extends React.Component {
     return(
       <div className='catalog'>
         <ul>
-          <li type='none' onClick={()=>this.smoothScroll('inspirations')}>inspirations</li>
           <li type='none' onClick={()=>this.smoothScroll('projects')}>projects</li>
           <li type='none' onClick={()=>this.smoothScroll('assets')}>assets</li>
           <li type='none' onClick={()=>this.smoothScroll('contact')}>contact</li>

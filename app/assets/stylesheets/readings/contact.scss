@@ -43,6 +43,7 @@
 }
 
 .contact-input > input:focus, .contact-input > textarea:focus {
+  color: black;
   border-bottom: 3px solid red;
   transition: 0.2s ease-in;
 }
