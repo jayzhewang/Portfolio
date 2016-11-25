@@ -2,6 +2,7 @@
   overflow: hidden;
   height: 200vh;
   width: auto;
+  position: relative;
 }
 
 .quotes > img {
@@ -10,6 +11,43 @@
   min-height: 611px;
   min-width: 977px;
   position: relative;
+}
+
+.quotes-img-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  min-height: 611px;
+  min-width: 977px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.quotes-img-text > div {
+  width: 100%;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quotes-img-text > div > p {
+  font-size: 20px;
+  width: 300px;
+}
+
+.view-portfolio {
+  display: flex;
+  align-items: center;
+}
+
+.view-portfolio > div {
+  text-align: right;
+  width: 75px;
+  font-size: 16px;
 }
 
 .text {
@@ -35,7 +73,7 @@
   text-align: right;
   position: absolute;
   bottom: 100px;
-  right: 100px;
+  right: 50px;
 }
 
 .text > div > div {

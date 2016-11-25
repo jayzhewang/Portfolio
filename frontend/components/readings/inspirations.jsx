@@ -4,6 +4,12 @@ class Inspirations extends React.Component {
   render(){
     return(
       <div className='quotes'>
+        <div className='quotes-img-text'>
+          <div>
+            <p>Zhe is a software engineer currently living in San Francisco.</p>
+            <div className='view-portfolio'><div>view portfolio</div></div>
+          </div>
+        </div>
         <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480065235/cloudcoder_am73qm.png' />
         <div className='text'>
           <div>
