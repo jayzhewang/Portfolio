@@ -6,13 +6,13 @@
 .contact-inner {
   width: 700px;
   height: 400px;
-  border: 1px solid red;
-  background: #ffffff;
   display: block;
 }
 
 .contact-inner > div {
   display: block;
+  margin: auto;
+  width: 300px;
 }
 
 .contact-input {
@@ -20,6 +20,7 @@
 }
 
 .contact-inner > div > input {
+  width: 300px;
   border-bottom: 3px solid green;
 }
 
