@@ -5,41 +5,44 @@
 
 .contact-inner {
   display: block;
+  width: 400px;
+  margin: auto;
 }
 
 .contact-inner > div {
   display: block;
-  margin: auto;
-  width: 300px;
+  width: 400px;
 }
 
-.contact-input {
-  display: block;
-}
-
-.contact-inner > div > input {
-  width: 300px;
-  background: #ffffff;
-  border-bottom: 3px solid green;
+.contact-text {
   margin-bottom: 20px;
 }
 
-.contact-inner > div:last-child > textarea {
-  background: #ffffff;
-  width: 300px;
-  max-width: 300px;
-  height: 150px;
+.contact-text > h1 {
+  font-size: 36px;
+}
+
+.contact-text > p {
+  font-size: 20px;
+}
+
+.contact-input > input {
+  width: 400px;
   border-bottom: 3px solid green;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  transition: border-bottom 0.2s ease-in;
 }
 
-#contact-name {
-
+.contact-input > textarea {
+  width: 400px;
+  max-width: 400px;
+  height: 100px;
+  border-bottom: 3px solid green;
+  transition: border-bottom 0.2s ease-in;
 }
 
-#contact-email {
-
-}
-
-#contact-message {
-
+.contact-input > input:focus, .contact-input > textarea:focus {
+  border-bottom: 3px solid red;
+  transition: 0.2s ease-in;
 }
