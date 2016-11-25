@@ -36,7 +36,7 @@ class Contact extends React.Component {
           </div>
           <div className='contact-input'>
             <label for='contact-message'>Message</label>
-            <input value={this.state.message}
+            <textarea value={this.state.message}
               id='contact-message'
               onChange={this.update('message')}/>
           </div>
