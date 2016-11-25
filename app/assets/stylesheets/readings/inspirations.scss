@@ -29,14 +29,14 @@
 
 .quotes-img-text > div {
   width: 100%;
-  padding: 0 100px;
+  padding: 0 75px;
   display: flex;
   justify-content: space-between;
 }
 
 .quotes-img-text > div > p {
-  font-size: 20px;
-  width: 300px;
+  font-size: 18px;
+  width: 255px;
 }
 
 .view-portfolio {
@@ -46,8 +46,18 @@
 
 .view-portfolio > div {
   text-align: right;
-  width: 75px;
+  width: 63px;
   font-size: 16px;
+  margin-right: 10px;
+}
+
+.view-portfolio > img {
+  width: 15px;
+  height: auto;
+}
+
+.view-portfolio > div:hover, .view-portfolio > img:hover {
+  cursor: pointer;
 }
 
 .text {

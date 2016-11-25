@@ -1,13 +1,26 @@
 import React from 'react';
+require('smoothscroll-polyfill').polyfill();
 
 class Inspirations extends React.Component {
+  constructor(props){
+    super(props);
+    this.smoothScroll = this.smoothScroll.bind(this);
+  }
+  smoothScroll(element){
+    document.querySelector(`#${element}`).scrollIntoView({ behavior: 'smooth' });
+  }
+
   render(){
     return(
       <div className='quotes'>
         <div className='quotes-img-text'>
           <div>
             <p>Zhe is a software engineer currently living in San Francisco.</p>
-            <div className='view-portfolio'><div>view portfolio</div></div>
+            <div className='view-portfolio'>
+              <div onClick={()=>this.smoothScroll('projects')}>view portfolio</div>
+              <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480069274/down-arrow_ayzzwl.png'
+                   onClick={()=>this.smoothScroll('projects')}/>
+            </div>
           </div>
         </div>
         <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480065235/cloudcoder_am73qm.png' />
