@@ -23,19 +23,19 @@ class Contact extends React.Component {
             <p>Projects. Partnerships. Coffee.</p>
           </div>
           <div className='contact-input'>
-            <label for='contact-name'>Name <sup>*</sup></label>
+            <label htmlFor='contact-name'>Name <sup>*</sup></label>
             <input value={this.state.name}
               id='contact-name'
               onChange={this.update('name')}/>
           </div>
           <div className='contact-input'>
-            <label for='contact-email'>Email <sup>*</sup></label>
+            <label htmlFor='contact-email'>Email <sup>*</sup></label>
             <input value={this.state.email}
               id='contact-email'
               onChange={this.update('email')}/>
           </div>
           <div className='contact-input'>
-            <label for='contact-message'>Message <sup>*</sup></label>
+            <label htmlFor='contact-message'>Message <sup>*</sup></label>
             <textarea value={this.state.message}
               id='contact-message'
               onChange={this.update('message')}/>
