@@ -2,3 +2,35 @@
   background-image: url('https://res.cloudinary.com/cloudlicious/image/upload/v1479713915/congruent_pentagon_qbw1md.png');
   background-repeat: repeat-x repeat-y;
 }
+
+.contact-inner {
+  width: 700px;
+  height: 400px;
+  border: 1px solid red;
+  background: #ffffff;
+  display: block;
+}
+
+.contact-inner > div {
+  display: block;
+}
+
+.contact-input {
+  display: block;
+}
+
+.contact-inner > div > input {
+  border-bottom: 3px solid green;
+}
+
+#contact-name {
+
+}
+
+#contact-email {
+
+}
+
+#contact-message {
+
+}
