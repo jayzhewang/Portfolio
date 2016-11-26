@@ -6,6 +6,7 @@ class Inspirations extends React.Component {
     super(props);
     this.smoothScroll = this.smoothScroll.bind(this);
   }
+  
   smoothScroll(element){
     document.querySelector(`#${element}`).scrollIntoView({ behavior: 'smooth' });
   }

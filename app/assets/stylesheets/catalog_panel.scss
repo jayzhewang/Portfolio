@@ -3,25 +3,26 @@
   width: 20vw;
   min-width: 250px;
   height: 100vh;
-  font-size: 30px;
   position: relative;
   z-index: 1;
   background: #5aa29b;
-  color: #666666;
+  color: gray;
   font-family: 'Fredericka the Great', cursive;
   background-image: url('https://res.cloudinary.com/cloudlicious/image/upload/v1479713915/graphy_a7sivk.png');
   background-repeat: repeat-x repeat-y;
 }
 
 .catalog > ul > li {
+  font-size: 30px;
   cursor: pointer;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+  transition: font-size 0.3s ease-in;
 }
 
 .catalog > ul {
   position: absolute;
   bottom: 0;
-  left: 85px;
+  left: 100px;
 }
 
 .catalog-shift-left {
@@ -54,3 +55,58 @@
   0% { -o-transform: translateX(0%); }
   100% { -o-transform: translateX(20vw); }
 }
+
+.enlarge {
+  color: black;
+  animation: enlarge 0.5s forwards;
+  -webkit-animation: enlarge 0.5s forwards;
+  -moz-animation: enlarge 0.5s forwards;
+  -ms-animation: enlarge 0.5s forwards;
+  -o-animation: enlarge 0.5s forwards;
+}
+
+@keyframes enlarge {
+  0% { transform: scaleX(1) scaleY(1); }
+  100% { transform: scaleX(1.1) scaleY(1.1); }
+}
+
+@-webkit-keyframes enlarge {
+  0% { -webkit-transform: scaleX(1) scaleY(1); }
+  100% { -webkit-transform: scaleX(1.1) scaleY(1.1); }
+}
+
+@-moz-keyframes enlarge {
+  0% { -moz-transform: scaleX(1) scaleY(1); }
+  100% { -moz-transform: scaleX(1.1) scaleY(1.1); }
+}
+@-o-keyframes enlarge {
+  0% { -o-transform: scaleX(1) scaleY(1); }
+  100% { -o-transform: scaleX(1.1) scaleY(1.1); }
+}
+//
+// .reduce {
+//   animation: reduce 0.5s forwards;
+//   -webkit-animation: reduce 0.5s forwards;
+//   -moz-animation: reduce 0.5s forwards;
+//   -ms-animation: reduce 0.5s forwards;
+//   -o-animation: reduce 0.5s forwards;
+// }
+//
+// @keyframes reduce {
+//   0% { transform: scaleX(1.1) scaleY(1.1); }
+//   100% { transform: scaleX(1) scaleY(1); }
+// }
+//
+// @-webkit-keyframes reduce {
+//   0% { -webkit-transform: scaleX(1.1) scaleY(1.1); }
+//   100% { -webkit-transform: scaleX(1) scaleY(1); }
+// }
+//
+// @-moz-keyframes reduce {
+//   0% { -moz-transform: scaleX(1.1) scaleY(1.1); }
+//   100% { -moz-transform: scaleX(1) scaleY(1); }
+// }
+// @-o-keyframes reduce {
+//   0% { -o-transform: scaleX(1.1) scaleY(1.1); }
+//   100% { -o-transform: scaleX(1) scaleY(1); }
+// }
