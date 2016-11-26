@@ -18,7 +18,7 @@ class AboutMe extends React.Component {
           <div className='am-body'>
             <p>
               This is my portfolio site designed and coded from <u>scratch</u>.
-              I am a software engineer well versed in the Ruby and JavaScript ecosystems.
+              I am a web developer well versed in the Ruby and JavaScript ecosystems.
               My skill sets extend through the full stack. On the server side
               I'm expert in<span id='rails'> Rails</span>,<span id='nodejs'> Node.js</span>,
               in combination with RDBMS, in particular<span id='postgresql'> PostgreSQL</span>.
@@ -54,7 +54,7 @@ class AboutMe extends React.Component {
             </p>
           </div>
           <div className='am-misc'>
-            
+
           </div>
         </div>
       </div>

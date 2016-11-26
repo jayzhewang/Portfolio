@@ -6,7 +6,7 @@ class Inspirations extends React.Component {
     super(props);
     this.smoothScroll = this.smoothScroll.bind(this);
   }
-  
+
   smoothScroll(element){
     document.querySelector(`#${element}`).scrollIntoView({ behavior: 'smooth' });
   }
@@ -16,7 +16,7 @@ class Inspirations extends React.Component {
       <div className='quotes'>
         <div className='quotes-img-text'>
           <div>
-            <p>Zhe is a software engineer currently living in San Francisco.</p>
+            <p>Zhe is a web developer currently living in San Francisco.</p>
             <div className='view-portfolio'>
               <div onClick={()=>this.smoothScroll('projects')}>view portfolio</div>
               <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480069274/down-arrow_ayzzwl.png'
