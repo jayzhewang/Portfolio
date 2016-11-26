@@ -6,7 +6,8 @@ class Contact extends React.Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      messageSent: false
     };
     this.sendMessage = this.sendMessage.bind(this);
   }
@@ -16,7 +17,19 @@ class Contact extends React.Component {
   }
 
   sendMessage(){
-    
+    let message = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
+    };
+    debugger;
+    this.props.sendMessage(message);
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+      messageSent: true
+    });
   }
 
   render(){

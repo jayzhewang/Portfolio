@@ -4,6 +4,7 @@ import { postMessage } from '../utils/contact_api_util';
 const ContactMiddleware = ({getState, dispatch}) => next => action => {
   switch(action.type){
     case MessageConstants.CREATE_MESSAGE:
+    debugger;
       const message = action.message;
       const success = response => dispatch(receiveMessage(response));
       postMessage(message, success);

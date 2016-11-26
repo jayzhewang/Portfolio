@@ -4,7 +4,7 @@ const ContactReducer = (state = [], action) => {
   switch(action.type){
     case MessageConstants.RECEIVE_MESSAGE:
       const response = action.response;
-      return state.concat([response]);
+      return state.concat(['messagesent']);
     default:
       return state;
   }

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import createMessage from '../../../actions/contact_actions';
+import { createMessage } from '../../../actions/contact_actions';
 import Contact from './contact';
 
 const mapStateToProps = state => ({

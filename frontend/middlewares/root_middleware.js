@@ -1,6 +1,8 @@
 import { applyMiddleware } from 'redux';
 import ContactMiddleware from './contact_middleware';
 
-export default applyMiddleware(
+const RootMiddleware = applyMiddleware(
   ContactMiddleware
 );
+
+export default RootMiddleware;
