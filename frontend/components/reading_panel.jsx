@@ -2,7 +2,7 @@ import React from 'react';
 import Inspirations from './readings/inspirations';
 import Projects from './readings/projects';
 import Assets from './readings/assets';
-import Contact from './readings/contact';
+import ContactContainer from './readings/contact/contact_container';
 
 class ReadingPanel extends React.Component {
   componentDidMount(){

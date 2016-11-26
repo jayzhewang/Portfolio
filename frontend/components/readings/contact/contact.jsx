@@ -8,10 +8,15 @@ class Contact extends React.Component {
       email: '',
       message: ''
     };
+    this.sendMessage = this.sendMessage.bind(this);
   }
 
   update(field){
     return e => { this.setState({[field]: e.currentTarget.value }); };
+  }
+
+  sendMessage(){
+    
   }
 
   render(){
@@ -40,6 +45,7 @@ class Contact extends React.Component {
               id='contact-message'
               onChange={this.update('message')}/>
           </div>
+          <button onClick={this.sendMessage}>Send!</button>
         </div>
       </div>
     );
