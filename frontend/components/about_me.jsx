@@ -1,6 +1,18 @@
 import React from 'react';
 
 class AboutMe extends React.Component {
+  constructor(props){
+    super(props);
+    this.goToContact = this.goToContact.bind(this);
+  }
+
+  goToContact(){
+    $('#close').trigger('click');
+    setTimeout(()=>{
+      $('#contactLi').trigger('click');
+    }, 1000);
+  }
+
   render(){
     return(
       <div className='about-me display-none'>
@@ -54,7 +66,7 @@ class AboutMe extends React.Component {
             </p>
           </div>
           <div className='am-misc'>
-
+            <span onClick={this.goToContact}>Send</span> me a message!
           </div>
         </div>
       </div>

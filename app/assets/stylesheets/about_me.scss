@@ -70,12 +70,25 @@
   left: calc(60px);
 }
 
+.am-misc {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.am-misc > span {
+  text-decoration: underline;
+}
+
+.am-misc > span:hover {
+  cursor: pointer;
+}
+
 .about-me-slider {
-  animation: about-me-slider 0.3s forwards ease-in-out;
-  -webkit-animation: about-me-slider 0.3s forwards ease-in-out;
-  -moz-animation: about-me-slider 0.3s forwards ease-in-out;
-  -ms-animation: about-me-slider 0.3s forwards ease-in-out;
-  -o-animation: about-me-slider 0.3s forwards ease-in-out;
+  animation: about-me-slider 0.4s forwards ease-in-out;
+  -webkit-animation: about-me-slider 0.4s forwards ease-in-out;
+  -moz-animation: about-me-slider 0.4s forwards ease-in-out;
+  -ms-animation: about-me-slider 0.4s forwards ease-in-out;
+  -o-animation: about-me-slider 0.4s forwards ease-in-out;
 }
 
 @keyframes about-me-slider {
