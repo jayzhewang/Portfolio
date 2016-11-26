@@ -9,3 +9,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   sendMessage: message => dispatch(createMessage(message))
 });
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Contact);

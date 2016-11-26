@@ -30,7 +30,7 @@ class ReadingPanel extends React.Component {
           <div className='scroll-page' id='inspirations'><Inspirations /></div>
           <div className='scroll-page' id='projects'><Projects /></div>
           <div className='scroll-page' id='assets'><Assets /></div>
-          <div className='scroll-page' id='contact'><Contact /></div>
+          <div className='scroll-page' id='contact'><ContactContainer /></div>
         </div>
       </div>
     );

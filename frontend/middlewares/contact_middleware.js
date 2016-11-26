@@ -12,3 +12,5 @@ const ContactMiddleware = ({getState, dispatch}) => next => action => {
       return next(action);
   }
 };
+
+export default ContactMiddleware;
