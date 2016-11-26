@@ -26,7 +26,7 @@ class Catalog extends React.Component {
       let second = $('#projects')[0].scrollHeight + first;
       let third = $('#assets')[0].scrollHeight + second;
       let fourth = $('#contact')[0].scrollHeight + third;
-      let pos = $('.scroll-container').scrollTop() + Math.floor(extra / 4);
+      let pos = $('.scroll-container').scrollTop() + Math.floor(extra / 2);
       if(pos < first){
         projects.removeClass('enlarge');
       } else if(pos >= first && pos < second && !projects.hasClass('enlarge')){
