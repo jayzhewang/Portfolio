@@ -5,7 +5,6 @@ class PortfolioContactController < ApplicationController
         render status: 400
       end
     end
-    debugger
     PortfolioMailer.new_portfolio_contact(portfolio_contact_params).deliver_now
     @response = { message: 'delivered' }
     render :response
