@@ -7,6 +7,7 @@ class Contact extends React.Component {
       name: '',
       email: '',
       message: '',
+      messageSent: false,
       messageDelivered: false
     };
     this.sendMessage = this.sendMessage.bind(this);
@@ -30,18 +31,20 @@ class Contact extends React.Component {
       alert('Please enter your email.');
     } else if(!this.state.message){
       alert('Please enter a message.');
+    } else {
+      let message = {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message
+      };
+      this.props.sendMessage(message);
+      this.setState({
+        name: '',
+        email: '',
+        message: '',
+        messageSent: true
+      });
     }
-    let message = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message
-    };
-    this.props.sendMessage(message);
-    this.setState({
-      name: '',
-      email: '',
-      message: ''
-    });
   }
 
   showContactForm(){
@@ -70,7 +73,10 @@ class Contact extends React.Component {
               id='contact-message'
               onChange={this.update('message')}/>
           </div>
-          <button id='send-button' onClick={this.sendMessage}>Send</button>
+          <button id='send-button' onClick={this.sendMessage}>
+            <div>Send</div>
+            {this.showLoader()}
+          </button>
         </div>
       </div>
     );
@@ -85,6 +91,14 @@ class Contact extends React.Component {
         </div>
       </div>
     );
+  }
+
+  showLoader(){
+    if(this.state.messageSent){
+      return (
+        <div className='loader'></div>
+      );
+    }
   }
 
   render(){
