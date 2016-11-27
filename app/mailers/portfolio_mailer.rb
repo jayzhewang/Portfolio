@@ -7,6 +7,6 @@ class PortfolioMailer < ApplicationMailer
   #
   def new_portfolio_contact(message)
     @message = message
-    mail to: `#{ENV['MAIL_RECEIVER']}`, subject: "New Portfolio Contact Message"
+    mail to: ENV['MAIL_RECEIVER'], subject: "New Portfolio Contact Message"
   end
 end

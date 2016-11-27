@@ -3,7 +3,7 @@ import { createMessage } from '../../../actions/contact_actions';
 import Contact from './contact';
 
 const mapStateToProps = state => ({
-  contact: state.contact
+  mailerMessage: state.mailerMessage
 });
 
 const mapDispatchToProps = dispatch => ({

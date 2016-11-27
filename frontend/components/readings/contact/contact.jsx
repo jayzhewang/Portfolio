@@ -7,9 +7,16 @@ class Contact extends React.Component {
       name: '',
       email: '',
       message: '',
-      messageSent: false
+      messageDelivered: false
     };
     this.sendMessage = this.sendMessage.bind(this);
+  }
+
+  componentDidUpdate(){
+    if(this.props.mailerMessage[0] === 'delivered' &&
+       !this.state.messageDelivered){
+      this.setState({messageDelivered: true});
+    }
   }
 
   update(field){
@@ -17,22 +24,27 @@ class Contact extends React.Component {
   }
 
   sendMessage(){
+    if(!this.state.name){
+      alert('Please enter your name.');
+    } else if(!this.state.email){
+      alert('Please enter your email.');
+    } else if(!this.state.message){
+      alert('Please enter a message.');
+    }
     let message = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
     };
-    debugger;
     this.props.sendMessage(message);
     this.setState({
       name: '',
       email: '',
-      message: '',
-      messageSent: true
+      message: ''
     });
   }
 
-  render(){
+  showContactForm(){
     return(
       <div className='contact'>
         <div className='contact-inner'>
@@ -58,10 +70,29 @@ class Contact extends React.Component {
               id='contact-message'
               onChange={this.update('message')}/>
           </div>
-          <button onClick={this.sendMessage}>Send!</button>
+          <button id='send-button' onClick={this.sendMessage}>Send</button>
         </div>
       </div>
     );
+  }
+
+  showMessageReceived(){
+    return (
+      <div className='contact'>
+        <div className='message-received'>
+          <h1>Message Sent</h1>
+          <h1>We'll be in touch soon.</h1>
+        </div>
+      </div>
+    );
+  }
+
+  render(){
+    if(this.state.messageDelivered){
+      return this.showMessageReceived();
+    } else {
+      return this.showContactForm();
+    }
   }
 }
 

@@ -47,3 +47,24 @@
   border-bottom: 3px solid red;
   transition: 0.2s ease-in;
 }
+
+#send-button {
+  margin-top: 20px;
+}
+
+#send-button:hover {
+  cursor: pointer;
+}
+
+.message-received {
+  text-align: center;
+}
+
+.message-received > h1 {
+  font-size: 24px;
+}
+
+.message-received > h1:first-child {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
