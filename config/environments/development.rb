@@ -51,5 +51,5 @@ Rails.application.configure do
     password: ENV['MAIL_PASSWORD']
   }
 
-  config.action_mailer.default_url_options = { host: '73.92.13.93' }
+  config.action_mailer.default_url_options = { host: ENV['DOMAIN'] }
 end
