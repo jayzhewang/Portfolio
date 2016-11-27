@@ -16,7 +16,12 @@ class Contact extends React.Component {
   componentDidUpdate(){
     if(this.props.mailerMessage[0] === 'delivered' &&
        !this.state.messageDelivered){
-      this.setState({messageDelivered: true});
+      this.setState({
+        name: '',
+        email: '',
+        message: '',
+        messageDelivered: true
+      });
     }
   }
 
@@ -38,12 +43,7 @@ class Contact extends React.Component {
         message: this.state.message
       };
       this.props.sendMessage(message);
-      this.setState({
-        name: '',
-        email: '',
-        message: '',
-        messageSent: true
-      });
+      this.setState({messageSent: true});
     }
   }
 
