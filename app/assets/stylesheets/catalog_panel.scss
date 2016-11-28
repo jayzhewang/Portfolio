@@ -11,16 +11,28 @@
   background-repeat: repeat-x repeat-y;
 }
 
+.catalog > ul {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+
 .catalog > ul > li {
   font-size: 36px;
   cursor: pointer;
   margin-bottom: 22px;
 }
 
-.catalog > ul {
-  position: absolute;
-  bottom: 0;
-  left: 100px;
+.catalog > ul > li:first-child {
+  margin-bottom: 11px;
+}
+
+#projects-ul {
+  // border: 1px solid red;
+  width: auto;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-bottom: 22px;
 }
 
 .catalog-shift-left {
@@ -55,6 +67,15 @@
 }
 
 .enlarge {
+  color: #364b71;
+  animation: enlarge 0.5s forwards;
+  -webkit-animation: enlarge 0.5s forwards;
+  -moz-animation: enlarge 0.5s forwards;
+  -ms-animation: enlarge 0.5s forwards;
+  -o-animation: enlarge 0.5s forwards;
+}
+
+.enlarge-2 {
   color: #364b71;
   animation: enlarge 0.5s forwards;
   -webkit-animation: enlarge 0.5s forwards;

@@ -3,7 +3,6 @@
   display: block;
   background-image: url('https://res.cloudinary.com/cloudlicious/image/upload/v1480119316/gridme_xrpbxt.png');
   background-repeat: repeat-x repeat-y;
-  padding: 25vh 0;
   border-bottom: 1px solid #e9e9e8;
 }
 
@@ -17,14 +16,20 @@
   margin: auto;
 }
 
+.single-project:first-child {
+  margin-top: 25vh;
+}
+
+// .single-project:last-child {
+//   height: 500px;
+// }
+
 .single-project:nth-child(odd) {
   right: 3vw;
 }
 
 .single-project:nth-child(even) {
   left: 2vw;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
 }
 
 .single-project > span {
