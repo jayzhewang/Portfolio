@@ -29,9 +29,9 @@ class Catalog extends React.Component {
     $('.scroll-container').scroll(function(){
       const _inspirations = $('#inspirations')[0].scrollHeight;
       const _projects = $('#projects')[0].scrollHeight + _inspirations;
-        let _eatsy = $('#eatsy')[0].scrollHeight + _inspirations;
-        let _sssf = $('#sssf')[0].scrollHeight + _eatsy;
-        let _endless = $('#endless')[0].scrollHeight + _sssf + Math.floor(viewportHeight / 4);
+        let _eatsy = $('#eatsy-container')[0].scrollHeight + _inspirations;
+        let _sssf = $('#sssf-container')[0].scrollHeight + _eatsy;
+        let _endless = $('#endless-container')[0].scrollHeight + _sssf;
       const _assets = $('#assets')[0].scrollHeight + _projects;
       const _contact = $('#contact')[0].scrollHeight + _assets;
       const pos2 = $('.scroll-container').scrollTop();
@@ -45,18 +45,18 @@ class Catalog extends React.Component {
           projects.addClass('enlarge');
           assets.removeClass('enlarge');
         }
-        if(pos2 >= _inspirations && pos2 < _eatsy){
+        if(pos2 >= _inspirations && pos2 < _eatsy - 150){
           if(!eatsy.hasClass('enlarge-2')){
             eatsy.addClass('enlarge-2');
             sssf.removeClass('enlarge-2');
           }
-        } else if(pos2 >= _eatsy && pos2 < _sssf){
+        } else if(pos2 >= _eatsy + 150 && pos2 < _sssf){
           if(!sssf.hasClass('enlarge-2')){
             sssf.addClass('enlarge-2');
             eatsy.removeClass('enlarge-2');
             endless.removeClass('enlarge-2');
           }
-        } else if(pos2 >= _sssf && pos2 < _endless){
+        } else if(pos2 >= _sssf + 300 && pos2 < _endless + 150){
           if(!endless.hasClass('enlarge-2')){
             endless.addClass('enlarge-2');
             sssf.removeClass('enlarge-2');

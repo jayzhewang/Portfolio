@@ -6,6 +6,22 @@
   border-bottom: 1px solid #e9e9e8;
 }
 
+.filler-container {
+  margin: auto;
+  width: 710px;
+  height: 150px;
+}
+
+.single-project-container {
+  margin: auto;
+  width: 710px;
+  height: 610px;
+}
+
+.single-project-container:first-child {
+  margin-top: 25vh;
+}
+
 .single-project {
   display: block;
   border: 5px solid #122246;
@@ -14,22 +30,6 @@
   height: 300px;
   position: relative;
   margin: auto;
-}
-
-.single-project:first-child {
-  margin-top: 25vh;
-}
-
-// .single-project:last-child {
-//   height: 500px;
-// }
-
-.single-project:nth-child(odd) {
-  right: 3vw;
-}
-
-.single-project:nth-child(even) {
-  left: 2vw;
 }
 
 .single-project > span {
@@ -43,6 +43,8 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+
 
 .single-project:hover span {
   opacity: 0.5;
