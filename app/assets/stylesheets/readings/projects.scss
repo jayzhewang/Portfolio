@@ -38,7 +38,7 @@
   right: 4vw;
 }
 
-.single-project.even {
+.single-project.even, .project-description-2.even {
   left: 4vw;
 }
 
@@ -156,9 +156,21 @@
   height: auto;
 }
 
-#rating-div > img {
-  width: 200px;
-  height: auto;
+#omakase-div > img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#maps-div > img:hover {
+  animation: enlarge 0.5s forwards;
+  -webkit-animation: enlarge 0.5s forwards;
+  -moz-animation: enlarge 0.5s forwards;
+  -ms-animation: enlarge 0.5s forwards;
+  -o-animation: enlarge 0.5s forwards;
+}
+
+#rating-star-symbol {
+  font-size: 40px;
 }
 
 #omakase-div, #rating-div, #maps-div {

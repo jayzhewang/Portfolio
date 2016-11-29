@@ -1,5 +1,6 @@
 /*eslint max-len: ["error", 300]*/
 import React from 'react';
+import StarRatingComponent from 'react-star-rating-component';
 
 class Projects extends React.Component {
   render(){
@@ -43,7 +44,15 @@ class Projects extends React.Component {
               </div>
               <div id='description-sub-2'>
                 <div id='rating-div'>
-                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                  <StarRatingComponent name='starRateStatic'
+                                         starCount={5}
+                                         value={3}
+                                         starColor={'#e5050b'}
+                                         emptyStarColor={'#acacac'}
+                                         renderStarIcon={()=>
+                                           <span id='rating-star-symbol'>
+                                             ✪
+                                           </span>} />
                 </div>
               </div>
             </div>
@@ -79,6 +88,34 @@ class Projects extends React.Component {
               </div>
             </div>
           </div>
+          <div className='project-description-2 even'>
+            <div id='description-sub'>
+              <div id='description-sub-2'>
+                <div id='rating-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                </div>
+              </div>
+              <div id='description-sub-1'>
+                <div>
+                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='project-description-2 even'>
+            <div id='description-sub'>
+              <div id='description-sub-2'>
+                <div id='rating-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                </div>
+              </div>
+              <div id='description-sub-1'>
+                <div>
+                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className='filler-container'></div>
         <div className='single-project-container' id='endless-container'>
@@ -94,6 +131,34 @@ class Projects extends React.Component {
                   <div className='project-github'>
                     <a href='https://github.com/jz-wang/EndlessSprinter'><img src='https://res.cloudinary.com/cloudlicious/image/upload/v1479798798/github_h9jurw.png'/></a>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='project-description-2 odd'>
+            <div id='description-sub'>
+              <div id='description-sub-1'>
+                <div>
+                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
+                </div>
+              </div>
+              <div id='description-sub-2'>
+                <div id='rating-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='project-description-2 odd'>
+            <div id='description-sub'>
+              <div id='description-sub-1'>
+                <div>
+                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
+                </div>
+              </div>
+              <div id='description-sub-2'>
+                <div id='rating-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
                 </div>
               </div>
             </div>
