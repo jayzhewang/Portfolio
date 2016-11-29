@@ -1,13 +1,13 @@
 .quotes {
   overflow: hidden;
   height: 200vh;
-  width: auto;
+  width: 80vw;
   position: relative;
 }
 
 .quotes > img {
-  width: auto;
-  height: 100vh;
+  width: 80vw;
+  height: auto;
   min-height: 611px;
   min-width: 977px;
   position: relative;
@@ -18,7 +18,7 @@
   top: 0;
   left: 0;
   width: 80vw;
-  height: 100vh;
+  height: auto;
   min-height: 611px;
   min-width: 977px;
   display: flex;
@@ -34,7 +34,7 @@
   justify-content: space-between;
 }
 
-.quotes-img-text > div > p {
+.quotes-img-short-desc > p {
   font-size: 18px;
   width: 252px;
 }
@@ -61,7 +61,7 @@
 }
 
 .text {
-  width: 64vw;
+  width: 80vw;
   height: 100vh;
   min-height: 611px;
   min-width: 977px;

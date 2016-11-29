@@ -16,7 +16,10 @@ class Inspirations extends React.Component {
       <div className='quotes'>
         <div className='quotes-img-text'>
           <div>
-            <p>Zhe is a web developer currently living in San Francisco.</p>
+            <div className='quotes-img-short-desc'>
+              <p>Zhe is a web developer currently living in</p>
+              <p>San Francisco.</p>
+            </div>
             <div className='view-portfolio'>
               <div onClick={()=>this.smoothScroll('projects')}>view portfolio</div>
               <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480069274/down-arrow_ayzzwl.png'
@@ -24,7 +27,7 @@ class Inspirations extends React.Component {
             </div>
           </div>
         </div>
-        <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480065235/cloudcoder_am73qm.png' />
+        <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480413888/coding_v5d9pw.png' />
         <div className='text'>
           <div>
             <div className='quote-line'>
