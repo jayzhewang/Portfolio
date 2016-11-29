@@ -151,8 +151,22 @@
   width: 250px;
 }
 
-#omakase-div > img, #maps-div > img {
+#omakase-div, #rating-div, #maps-div, #cleaning-div, #heroku-div {
+  display: flex;
+  align-items: center;
+}
+
+#rating-star-symbol {
+  font-size: 40px;
+}
+
+#omakase-div > img, #maps-div > img, #heroku-div > img {
   width: 100px;
+  height: auto;
+}
+
+#cleaning-div > img {
+  width: 300px;
   height: auto;
 }
 
@@ -161,19 +175,14 @@
   transition: 0.3s;
 }
 
-#maps-div > img:hover {
-  animation: enlarge 0.5s forwards;
-  -webkit-animation: enlarge 0.5s forwards;
-  -moz-animation: enlarge 0.5s forwards;
-  -ms-animation: enlarge 0.5s forwards;
-  -o-animation: enlarge 0.5s forwards;
+#maps-div > img:hover, #heroku-div > img:hover {
+  animation: enlarge 0.3s forwards;
+  -webkit-animation: enlarge 0.3s forwards;
+  -moz-animation: enlarge 0.3s forwards;
+  -ms-animation: enlarge 0.3s forwards;
+  -o-animation: enlarge 0.3s forwards;
 }
 
-#rating-star-symbol {
-  font-size: 40px;
-}
-
-#omakase-div, #rating-div, #maps-div {
-  display: flex;
-  align-items: center;
+#chrome-notifications-div {
+  width: 325px;
 }

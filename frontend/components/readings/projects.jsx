@@ -27,7 +27,7 @@ class Projects extends React.Component {
             <div id='description-sub'>
               <div id='description-sub-1'>
                 <div>
-                  <p>Eatsy is a crowd sourced restaurant review app, inspired by Yelp. You can find your favorite local restaurants. Flip through beautiful pictures and pages.</p>
+                  <p>Eatsy is a crowd sourced restaurant review app, inspired by Yelp. Users can find their favorite local restaurants. Flip through beautiful pictures and pages.</p>
                 </div>
               </div>
               <div id='description-sub-2'>
@@ -46,7 +46,7 @@ class Projects extends React.Component {
                 <div id='rating-div'>
                   <StarRatingComponent name='starRateStatic'
                                          starCount={5}
-                                         value={3}
+                                         value={2}
                                          starColor={'#e5050b'}
                                          emptyStarColor={'#acacac'}
                                          renderStarIcon={()=>
@@ -91,13 +91,13 @@ class Projects extends React.Component {
           <div className='project-description-2 even'>
             <div id='description-sub'>
               <div id='description-sub-2'>
-                <div id='rating-div'>
-                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                <div id='cleaning-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1476986584/sssf3-cropped_vguzt2.png'/>
                 </div>
               </div>
               <div id='description-sub-1'>
                 <div>
-                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
+                  <p>StreetSweepSF is a Chrome extension that allows users to keep track of their streeting cleaning schedule and alerts them before the cleaning time.</p>
                 </div>
               </div>
             </div>
@@ -105,14 +105,24 @@ class Projects extends React.Component {
           <div className='project-description-2 even'>
             <div id='description-sub'>
               <div id='description-sub-2'>
-                <div id='rating-div'>
-                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                <div id='heroku-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480454259/heroku_pe9wbz.png'/>
                 </div>
               </div>
               <div id='description-sub-1'>
                 <div>
-                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
+                  <p>StreetSweepSF uses a dedicated rails server on Heroku, from where to fetch street cleaning data. The rails controller isolates the street name in the user entry and queries the database. By using a seperate server StreetSweepSF ensures a light package while still maintaining the speed in which data is fetched and delivered to the user.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className='project-description-2 even'>
+            <div id='description-sub'>
+              <div id='chrome-notifications-div'>
+                <p>When a user enters an address and hits get schedule, the app makes a GET request to the rails server and fetches back raw KML data. The app then parses the data through the react schedules component, which cleverly filters out the next street cleaning schedule based on the current date, and passes the result to the reminders component for the user to select the settings for a desktop notification.</p>
+              </div>
+              <div id='chrome-notifications-div'>
+                <p>Desktop notification is achieved with Chrome's alerts and notifcations apis. When a new reminder is set up, a background page runs continously, even when Chrome is closed. On every 2 minute interval, the background page checks whether the current time is within the desktop nofitications range, if so, a desktop notification is created; if the current time is after the range, the notification is erased from Chrome's synchronous cache.</p>
               </div>
             </div>
           </div>
