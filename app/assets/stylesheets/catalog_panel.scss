@@ -19,7 +19,6 @@
 
 .catalog > ul > li {
   font-size: 36px;
-  cursor: pointer;
   margin-bottom: 22px;
 }
 
@@ -39,48 +38,19 @@
 }
 
 .enlarge {
+  animation: enlarge 0.5s forwards;
+  -webkit-animation: enlarge 0.5s forwards;
+  -moz-animation: enlarge 0.5s forwards;
+  -ms-animation: enlarge 0.5s forwards;
+  -o-animation: enlarge 0.5s forwards;
+}
+
+.blue {
   color: #364b71;
-  animation: enlarge 0.5s forwards;
-  -webkit-animation: enlarge 0.5s forwards;
-  -moz-animation: enlarge 0.5s forwards;
-  -ms-animation: enlarge 0.5s forwards;
-  -o-animation: enlarge 0.5s forwards;
 }
 
-.enlarge-2 {
+.orange {
   color: #ff6600;
-  animation: enlarge 0.5s forwards;
-  -webkit-animation: enlarge 0.5s forwards;
-  -moz-animation: enlarge 0.5s forwards;
-  -ms-animation: enlarge 0.5s forwards;
-  -o-animation: enlarge 0.5s forwards;
-}
-
-.catalog-panel-slider {
-  animation: catalog-panel-slider 0.8s forwards;
-  -webkit-animation: catalog-panel-slider 0.8s forwards;
-  -moz-animation: catalog-panel-slider 0.8s forwards;
-  -ms-animation: catalog-panel-slider 0.8s forwards;
-  -o-animation: catalog-panel-slider 0.8s forwards;
-}
-
-@keyframes catalog-panel-slider {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(20vw); }
-}
-
-@-webkit-keyframes catalog-panel-slider {
-  0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(20vw); }
-}
-
-@-moz-keyframes catalog-panel-slider {
-  0% { -moz-transform: translateX(0%); }
-  100% { -moz-transform: translateX(20vw); }
-}
-@-o-keyframes catalog-panel-slider {
-  0% { -o-transform: translateX(0%); }
-  100% { -o-transform: translateX(20vw); }
 }
 
 @keyframes enlarge {

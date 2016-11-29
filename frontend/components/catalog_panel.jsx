@@ -37,41 +37,41 @@ class Catalog extends React.Component {
       const pos2 = $('.scroll-container').scrollTop();
       const pos = pos2 + Math.floor(viewportHeight / 2);
       if(pos < _inspirations){
-        projects.removeClass('enlarge');
-          eatsy.removeClass('enlarge-2');
+        projects.removeClass('enlarge blue');
+          eatsy.removeClass('enlarge orange');
       } else if(pos >= _inspirations && pos < _projects){
-        if(!projects.hasClass('enlarge')){
-          projects.addClass('enlarge');
-          assets.removeClass('enlarge');
+        if(!projects.hasClass('enlarge blue')){
+          projects.addClass('enlarge blue');
+          assets.removeClass('enlarge blue');
         }
         if(pos2 >= _inspirations && pos2 < _eatsy - 150){
-          if(!eatsy.hasClass('enlarge-2')){
-            eatsy.addClass('enlarge-2');
-            sssf.removeClass('enlarge-2');
+          if(!eatsy.hasClass('enlarge orange')){
+            eatsy.addClass('enlarge orange');
+            sssf.removeClass('enlarge orange');
           }
         } else if(pos2 >= _eatsy + 150 && pos2 < _sssf){
-          if(!sssf.hasClass('enlarge-2')){
-            sssf.addClass('enlarge-2');
-            eatsy.removeClass('enlarge-2');
-            endless.removeClass('enlarge-2');
+          if(!sssf.hasClass('enlarge orange')){
+            sssf.addClass('enlarge orange');
+            eatsy.removeClass('enlarge orange');
+            endless.removeClass('enlarge orange');
           }
         } else if(pos2 >= _sssf + 300 && pos2 < _endless + 150){
-          if(!endless.hasClass('enlarge-2')){
-            endless.addClass('enlarge-2');
-            sssf.removeClass('enlarge-2');
+          if(!endless.hasClass('enlarge orange')){
+            endless.addClass('enlarge orange');
+            sssf.removeClass('enlarge orange');
           }
         }
       } else if(pos >= _projects && pos < _assets){
-        if(!assets.hasClass('enlarge')){
-          assets.addClass('enlarge');
-          projects.removeClass('enlarge');
-            endless.removeClass('enlarge-2');
-          contact.removeClass('enlarge');
+        if(!assets.hasClass('enlarge blue')){
+          assets.addClass('enlarge blue');
+          projects.removeClass('enlarge blue');
+            endless.removeClass('enlarge orange');
+          contact.removeClass('enlarge blue');
         }
       } else if(pos >= _assets && pos < _contact){
-        if(!contact.hasClass('enlarge')){
-          contact.addClass('enlarge');
-          assets.removeClass('enlarge');
+        if(!contact.hasClass('enlarge blue')){
+          contact.addClass('enlarge blue');
+          assets.removeClass('enlarge blue');
         }
       }
     });

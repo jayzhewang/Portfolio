@@ -25,10 +25,6 @@
   min-width: 58px;
 }
 
-.side-panel-top > div:hover{
-  cursor: pointer;
-}
-
 .side-panel-bottom {
   display: flex;
   justify-content: flex-start;
@@ -78,31 +74,4 @@
 .linkedin-background > a > img{
   height: 20px;
   weight: 20px;
-}
-
-.side-panel-slider {
-  animation: side-panel-slider 0.3s forwards ease-out;
-  -webkit-animation: side-panel-slider 0.3s forwards ease-out;
-  -moz-animation: side-panel-slider 0.3s forwards ease-out;
-  -ms-animation: side-panel-slider 0.3s forwards ease-out;
-  -o-animation: side-panel-slider 0.3s forwards ease-out;
-}
-
-@keyframes side-panel-slider {
-  0% { transform: translateX(0%) rotate(-90deg); }
-  100% { transform: translateX(60px) rotate(-90deg); }
-}
-
-@-webkit-keyframes side-panel-slider {
-  0% { -webkit-transform: translateX(0%) rotate(-90deg); }
-  100% { -webkit-transform: translateX(60px) rotate(-90deg); }
-}
-
-@-moz-keyframes side-panel-slider {
-  0% { -moz-transform: translateX(0%) rotate(-90deg); }
-  100% { -moz-transform: translateX(60px) rotate(-90deg); }
-}
-@-o-keyframes side-panel-slider {
-  0% { -o-transform: translateX(0%) rotate(-90deg); }
-  100% { -o-transform: translateX(60px) rotate(-90deg); }
 }

@@ -1,3 +1,4 @@
+/*eslint max-len: ["error", 300]*/
 import React from 'react';
 
 class Projects extends React.Component {
@@ -25,7 +26,7 @@ class Projects extends React.Component {
             <div id='description-sub'>
               <div id='description-sub-1'>
                 <div>
-                  <p>Eatsy is a crowd sourced restaurant review app. Insprited by Yelp, you can find your favorite local restaurants. Flip through beautiful pictures and pages.</p>
+                  <p>Eatsy is a crowd sourced restaurant review app. Inspired by Yelp, you can find your favorite local restaurants. Flip through beautiful pictures and pages.</p>
                 </div>
               </div>
               <div id='description-sub-2'>
