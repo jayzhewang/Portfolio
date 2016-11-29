@@ -1,24 +1,33 @@
 .quotes {
   overflow: hidden;
-  height: 200vh;
   width: 80vw;
   position: relative;
 }
 
-.quotes > img {
-  width: 80vw;
-  height: auto;
+.quotes-coder-img {
+  width: auto;
+  height: 100vh;
   min-height: 611px;
   min-width: 977px;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quotes-coder-img > img {
+  width: auto;
+  height: 100vh;
+  margin: auto;
 }
 
 .quotes-img-text {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80vw;
-  height: auto;
+  width: auto;
+  height: 100vh;
   min-height: 611px;
   min-width: 977px;
   display: flex;
@@ -28,8 +37,9 @@
 }
 
 .quotes-img-text > div {
-  width: 100%;
-  padding: 0 75px;
+  width: 70vw;
+  padding: 0 5vw;
+  min-width: 750px;
   display: flex;
   justify-content: space-between;
 }

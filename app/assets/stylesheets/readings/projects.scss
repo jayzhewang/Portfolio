@@ -14,7 +14,6 @@
 .single-project-container {
   margin: auto;
   width: 80vw;
-  height: 610px;
 }
 
 .single-project-container:first-child {
@@ -149,15 +148,20 @@
 }
 
 #description-sub-1 > div {
-  width: 200px;
+  width: 250px;
 }
 
-#omakase-div > img {
+#omakase-div > img, #maps-div > img {
   width: 100px;
   height: auto;
 }
 
-#rating {
-  width: 150px;
+#rating-div > img {
+  width: 200px;
   height: auto;
+}
+
+#omakase-div, #rating-div, #maps-div {
+  display: flex;
+  align-items: center;
 }

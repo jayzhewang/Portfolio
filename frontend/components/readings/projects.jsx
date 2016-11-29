@@ -26,7 +26,7 @@ class Projects extends React.Component {
             <div id='description-sub'>
               <div id='description-sub-1'>
                 <div>
-                  <p>Eatsy is a crowd sourced restaurant review app. Inspired by Yelp, you can find your favorite local restaurants. Flip through beautiful pictures and pages.</p>
+                  <p>Eatsy is a crowd sourced restaurant review app, inspired by Yelp. You can find your favorite local restaurants. Flip through beautiful pictures and pages.</p>
                 </div>
               </div>
               <div id='description-sub-2'>
@@ -38,12 +38,24 @@ class Projects extends React.Component {
             <div id='description-sub'>
               <div id='description-sub-1'>
                 <div>
-                  <p>Sign up and leave reviews to help other find great local restaurants.</p>
+                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
                 </div>
               </div>
               <div id='description-sub-2'>
+                <div id='rating-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                </div>
+              </div>
+            </div>
+            <div id='description-sub'>
+              <div id='description-sub-1'>
                 <div>
-                  <img id='rating' src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                  <p>Google Maps integration. Provides an overview of all restaurants in the area, as well as individual restaurants.</p>
+                </div>
+              </div>
+              <div id='description-sub-2'>
+                <div id='maps-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480418671/maps_ububcr.png'/>
                 </div>
               </div>
             </div>

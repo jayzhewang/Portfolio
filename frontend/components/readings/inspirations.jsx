@@ -1,3 +1,4 @@
+/*eslint max-len: ['error', 300]*/
 import React from 'react';
 require('smoothscroll-polyfill').polyfill();
 
@@ -27,7 +28,9 @@ class Inspirations extends React.Component {
             </div>
           </div>
         </div>
-        <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480413888/coding_v5d9pw.png' />
+        <div className='quotes-coder-img'>
+          <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480065235/cloudcoder_am73qm.png'/>
+        </div>
         <div className='text'>
           <div>
             <div className='quote-line'>
