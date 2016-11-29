@@ -5,9 +5,9 @@ class Projects extends React.Component {
     return(
       <div className='projects'>
         <div className='single-project-container' id='eatsy-container'>
-          <div className='single-project' id='eatsy'>
+          <div className='single-project odd' id='eatsy'>
             <span></span>
-            <div className='project-description'>
+            <div className='project-description eatsy'>
               <h1>Eatsy</h1>
               <div className='project-links'>
                 <div>
@@ -21,10 +21,36 @@ class Projects extends React.Component {
               </div>
             </div>
           </div>
+          <div className='project-description-2 odd'>
+            <div id='description-sub'>
+              <div id='description-sub-1'>
+                <div>
+                  <p>Eatsy is a crowd sourced restaurant review app. Insprited by Yelp, you can find your favorite local restaurants. Flip through beautiful pictures and pages.</p>
+                </div>
+              </div>
+              <div id='description-sub-2'>
+                <div id='omakase-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/c_scale,w_400/v1480350934/omakase-circle_ctciqd.png'/>
+                </div>
+              </div>
+            </div>
+            <div id='description-sub'>
+              <div id='description-sub-1'>
+                <div>
+                  <p>Sign up and leave reviews to help other find great local restaurants.</p>
+                </div>
+              </div>
+              <div id='description-sub-2'>
+                <div>
+                  <img id='rating' src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className='filler-container'></div>
         <div className='single-project-container' id='sssf-container'>
-          <div className='single-project' id='sssf'>
+          <div className='single-project even' id='sssf'>
             <span></span>
             <div className='project-description'>
               <h1>StreetSweepSF</h1>
@@ -43,7 +69,7 @@ class Projects extends React.Component {
         </div>
         <div className='filler-container'></div>
         <div className='single-project-container' id='endless-container'>
-          <div className='single-project' id='endless'>
+          <div className='single-project odd' id='endless'>
             <span></span>
             <div className='project-description'>
               <h1>EndlessSprinter</h1>

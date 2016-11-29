@@ -36,7 +36,6 @@ class Catalog extends React.Component {
       const _contact = $('#contact')[0].scrollHeight + _assets;
       const pos2 = $('.scroll-container').scrollTop();
       const pos = pos2 + Math.floor(viewportHeight / 2);
-      window.console.log(pos, _sssf, _endless);
       if(pos < _inspirations){
         projects.removeClass('enlarge');
           eatsy.removeClass('enlarge-2');
