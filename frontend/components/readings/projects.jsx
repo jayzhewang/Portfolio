@@ -11,11 +11,11 @@ class Projects extends React.Component {
             <span></span>
             <div id='eatsy'>
               <video autoPlay loop>
-                <source src='https://res.cloudinary.com/cloudlicious/video/upload/v1480474883/eatsyvid720p_lht8mw.mp4' type='video/mp4' />
+                <source src='https://res.cloudinary.com/cloudlicious/video/upload/w_1270,h_544,c_crop/v1480474883/eatsyvid720p_lht8mw.mp4' type='video/mp4' />
                 Oops! Your browser does not support the mp4 videos.
               </video>
             </div>
-            <div className='project-description'>
+            <div className='project-description eatsy'>
               <h1>Eatsy</h1>
               <div className='project-links'>
                 <div>
@@ -78,8 +78,14 @@ class Projects extends React.Component {
         </div>
         <div className='filler-container'></div>
         <div className='single-project-container' id='sssf-container'>
-          <div className='single-project even' id='sssf'>
+          <div className='single-project even'>
             <span></span>
+            <div id='sssf'>
+              <video autoPlay loop>
+                <source src='https://res.cloudinary.com/cloudlicious/video/upload/w_1280,h_549,c_crop/v1480477715/sssfvid720p_gjwrph.mp4' type='video/mp4' />
+                Oops! Your browser does not support the mp4 videos.
+              </video>
+            </div>
             <div className='project-description'>
               <h1>StreetSweepSF</h1>
               <div className='project-links'>

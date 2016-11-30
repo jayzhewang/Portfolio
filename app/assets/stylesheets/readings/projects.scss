@@ -67,15 +67,10 @@
   position: relative;
 }
 
-#eatsy > video {
+#eatsy > video, #sssf > video {
   width: 700px;
   height: auto;
   position: absolute;
-}
-
-#sssf {
-  background-image: url('https://res.cloudinary.com/cloudlicious/image/upload/v1479766211/chrome_tmnych.png');
-  background-size: 100% auto;
 }
 
 #endless {
