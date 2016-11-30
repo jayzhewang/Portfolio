@@ -9,7 +9,13 @@ class Projects extends React.Component {
         <div className='single-project-container' id='eatsy-container'>
           <div className='single-project odd' id='eatsy'>
             <span></span>
-            <div className='project-description eatsy'>
+            <div id='eatsy'>
+              <video autoPlay loop>
+                <source src='https://res.cloudinary.com/cloudlicious/video/upload/v1480474883/eatsyvid720p_lht8mw.mp4' type='video/mp4' />
+                Oops! Your browser does not support the mp4 videos.
+              </video>
+            </div>
+            <div className='project-description'>
               <h1>Eatsy</h1>
               <div className='project-links'>
                 <div>
