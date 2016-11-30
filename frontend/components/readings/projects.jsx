@@ -145,6 +145,12 @@ class Projects extends React.Component {
         <div className='single-project-container' id='endless-container'>
           <div className='single-project odd' id='endless'>
             <span></span>
+            <div id='endless'>
+              <video autoPlay loop>
+                <source src='https://res.cloudinary.com/cloudlicious/video/upload/w_2315,h_992,c_crop/v1480479573/endless_ytfyew.mp4' type='video/mp4' />
+                Oops! Your browser does not support the mp4 videos.
+              </video>
+            </div>
             <div className='project-description'>
               <h1>EndlessSprinter</h1>
               <div className='project-links'>

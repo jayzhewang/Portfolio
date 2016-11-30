@@ -67,15 +67,10 @@
   position: relative;
 }
 
-#eatsy > video, #sssf > video {
+#eatsy > video, #sssf > video, #endless > video {
   width: 700px;
   height: auto;
   position: absolute;
-}
-
-#endless {
-  background-image: url('https://res.cloudinary.com/cloudlicious/image/upload/v1479767882/endlessrunner_yd3qqu.png');
-  background-size: 100% auto;
 }
 
 .project-description {
