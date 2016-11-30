@@ -180,18 +180,6 @@
   transition: 0.3s;
 }
 
-#maps-div > img:hover,
-#heroku-div > img:hover,
-#cleaning-div > img:hover,
-#canvas-div > img:hover,
-#highscores-div > img:hover {
-  animation: enlarge 0.3s forwards;
-  -webkit-animation: enlarge 0.3s forwards;
-  -moz-animation: enlarge 0.3s forwards;
-  -ms-animation: enlarge 0.3s forwards;
-  -o-animation: enlarge 0.3s forwards;
-}
-
 #chrome-notifications-div {
   width: 300px;
 }
