@@ -151,7 +151,12 @@
   width: 250px;
 }
 
-#omakase-div, #rating-div, #maps-div, #cleaning-div, #heroku-div {
+#omakase-div,
+#rating-div,
+#maps-div,
+#cleaning-div,
+#heroku-div,
+#highscores-div {
   display: flex;
   align-items: center;
 }
@@ -160,7 +165,7 @@
   font-size: 40px;
 }
 
-#omakase-div > img, #maps-div > img, #heroku-div > img {
+#omakase-div > img, #maps-div > img, #heroku-div > img, #canvas-div > img {
   width: 100px;
   height: auto;
 }
@@ -175,7 +180,11 @@
   transition: 0.3s;
 }
 
-#maps-div > img:hover, #heroku-div > img:hover {
+#maps-div > img:hover,
+#heroku-div > img:hover,
+#cleaning-div > img:hover,
+#canvas-div > img:hover,
+#highscores-div > img:hover {
   animation: enlarge 0.3s forwards;
   -webkit-animation: enlarge 0.3s forwards;
   -moz-animation: enlarge 0.3s forwards;
@@ -184,5 +193,10 @@
 }
 
 #chrome-notifications-div {
-  width: 325px;
+  width: 300px;
+}
+
+#highscores-div > img {
+  width: 150px;
+  height: auto;
 }

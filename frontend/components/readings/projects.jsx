@@ -119,10 +119,12 @@ class Projects extends React.Component {
           <div className='project-description-2 even'>
             <div id='description-sub'>
               <div id='chrome-notifications-div'>
-                <p>When a user enters an address and hits get schedule, the app makes a GET request to the rails server and fetches back raw KML data. The app then parses the data through the react schedules component, which cleverly filters out the next street cleaning schedule based on the current date, and passes the result to the reminders component for the user to select the settings for a desktop notification.</p>
+                <p>When a user enters an address and hits get schedule, the app makes a GET request to the rails server and fetches back raw KML data. The app then parses the data through the react schedules component, which cleverly filters out the next street cleaning schedule based on the current date, and passes the result to the reminders component for the user to select the settings for a desktop notification. Reminders and other user data are stored in Chrome's synchronous cache.</p>
               </div>
-              <div id='chrome-notifications-div'>
-                <p>Desktop notification is achieved with Chrome's alerts and notifcations apis. When a new reminder is set up, a background page runs continously, even when Chrome is closed. On every 2 minute interval, the background page checks whether the current time is within the desktop nofitications range, if so, a desktop notification is created; if the current time is after the range, the notification is erased from Chrome's synchronous cache.</p>
+              <div id='description-sub-1'>
+                <div>
+                  <p>Desktop notification is achieved with Chrome's alerts and notifcations APIs. When a new reminder is set up, a background page runs continously, even when Chrome is closed. On every 2 minute interval, the background page checks whether the current time is within range and if so creates a new notification; otherwise if after the range, the notification is erased.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -149,12 +151,12 @@ class Projects extends React.Component {
             <div id='description-sub'>
               <div id='description-sub-1'>
                 <div>
-                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
+                  <p>EndlessSprinter is a browser runner game. It is built with vanilla JavaScript and HTML5 Canvas. EndlessSprinter is fun, challenging, and rewarding.</p>
                 </div>
               </div>
               <div id='description-sub-2'>
-                <div id='rating-div'>
-                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                <div id='canvas-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480468575/canvas_bcwvyi.png'/>
                 </div>
               </div>
             </div>
@@ -163,12 +165,12 @@ class Projects extends React.Component {
             <div id='description-sub'>
               <div id='description-sub-1'>
                 <div>
-                  <p>Sign up and leave reviews to help other find great local restaurants. All Reviews of a restaurant are tallied and the average rating is calculated when the restaurant is fetched from the database.</p>
+                  <p>Compare highscores with other players. EndlessSprinter uses a dedicated rails server from which to fetch and store highscores. Scores are fetched from the server and the top 10 scores are filtered and displayed.</p>
                 </div>
               </div>
               <div id='description-sub-2'>
-                <div id='rating-div'>
-                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1480350341/review_kxe0zq.png'/>
+                <div id='highscores-div'>
+                  <img src='https://res.cloudinary.com/cloudlicious/image/upload/v1476988364/esscore_lw2dwk.png'/>
                 </div>
               </div>
             </div>
