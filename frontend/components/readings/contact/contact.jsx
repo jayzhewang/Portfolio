@@ -53,7 +53,7 @@ class Contact extends React.Component {
         <div className='contact-inner'>
           <div className='contact-text'>
             <h1>Let's Talk</h1>
-            <p>Projects. Partnerships. Coffee.</p>
+            <p>Projects. Opportunities. Coffee.</p>
           </div>
           <div className='contact-input'>
             <label htmlFor='contact-name'>Name <sup>*</sup></label>
