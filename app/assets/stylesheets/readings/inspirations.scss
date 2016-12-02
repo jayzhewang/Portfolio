@@ -32,8 +32,8 @@
   min-width: 977px;
   display: flex;
   align-items: center;
-  z-index: 1;
   color: #ffffff;
+  background: #364b71;
 }
 
 .quotes-img-text > div {
@@ -42,6 +42,8 @@
   min-width: 750px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .quotes-img-short-desc > p {
